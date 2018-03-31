@@ -1,0 +1,397 @@
+@import url("left-nav.css");
+@import url("top-nav.css");
+@import url("buildInfo-box.css");
+@import url("overview-box.css");
+@import url("chat.css");
+@import url("ressbar.css");
+@import url("tooltip.css");
+@import url("planeten.css");
+@import url("bau_bilder.css");
+@import url("news.css");
+@import url("nachrichten.css");
+@import url("infomration.css");
+@import url("lightbox.css");
+@import url("galaxie.css");
+
+.clear
+{
+    clear:both;   
+}
+* {
+  font-family:          Arial, Helvetica, Tahoma, Sans-Serif;
+  font-size:            10pt;
+  font-weight:          normal;
+  outline:none;
+  padding:0;
+}
+
+/* Body */
+body {
+font-size: 0.825em;
+color: #FCFCFC;
+background: black url(../2-0/bg_1920X1080.png) no-repeat top fixed;
+-moz-background-size: 100% 100%;
+-o-background-size: 100% 100%;
+-webkit-background-size: 100% 100%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* wrapper */
+#wrapper {
+margin: 0px auto;
+width: 1100px;
+}
+
+/* Content */
+#content {
+float: left;
+width: 100%;
+margin: -200px auto;
+}
+
+
+/* main-wrapper */
+#main-wrapper {
+margin: 101px auto;
+width: 680px;
+}
+
+
+/* main */
+#main-content {
+margin:0 auto;
+}
+
+.table_logout {
+width:519px;
+}
+
+
+.v3_table {
+width:630px;
+margin:0 auto;
+}
+
+
+p
+{
+	margin-bottom			:	1px;
+}
+table  { 
+
+}
+td
+{
+	text-align			: left;
+}
+th {
+background: url(../2-0/Gigra-Home_Headline.png) repeat-x;
+color: #619FC8;
+font-size: 15px;
+height: 30px;
+line-height: 30px;
+text-shadow: -1px -1px 0 black;
+font-weight: bold;
+
+}
+td.b, td.l, td.k, td.f, td.t, th {
+  border-color:         #223344;
+  border-width:         1px;
+  border-style:         solid;
+}
+td.b, td.l, td.k {
+  background-color:     #112233;
+}
+
+td.c {
+border: 1px solid #484848;
+font-size: 12px;
+font-weight: bold;
+display: table-cell;
+vertical-align: inherit;
+}
+
+
+td.f {
+  background-color:     #CC0000;
+  color:                #FFFFFF;
+  font-weight:bold;
+  text-align:           center;
+}
+td.k {
+  text-align:           center;
+}
+td.t {
+  text-align:           center;
+  background-color:     #333333;
+}
+
+select,input,textarea {
+  background-color:     #224466;
+  color:                #FFFFFF;
+  border-color:         #336699;
+  border-width:         1px;
+  border-style:         solid;
+  font-size:            12px;
+}
+
+img {
+border:none;
+}
+
+.quote {
+  border-style:         solid;
+  border-width:         1px;
+  border-color:         #103050;
+  margin:               3px;
+  padding:              1px;
+}
+.author {
+  border-style:         solid;
+  border-width:         1px;
+  border-color:         #FFFFFF;
+  background-color:     #103050;
+  color:                #FFFFFF;
+  margin:               0px;
+  padding:              2px;
+}
+
+a {
+  color:                #FFFFFF;
+  font-weight:          bold;
+  text-decoration:      none;
+}
+a.s {
+  color:                #00FF00;
+}
+a.t {
+  color:                #FF0000;
+}
+a:hover {
+  color:                #4488BB;
+  text-decoration:      none;
+}
+
+.a {
+  font-size:            16px;
+}
+.g {
+  font-size:            12px;
+  text-decoration:      none;
+}
+.tiny {
+font-size:              10px;
+}
+.buttonlike
+{
+	width				:	150px;
+	background			:	#112233;
+	color				:	#223344;
+	border				:	1px #223344 solid;
+	opacity				:	0.8;
+}
+
+#evalB, #evalF, .hiddenInfo
+{
+	display				:	none;
+}
+
+
+#bauliste, #forschliste, #schiffliste, #verteidigungsliste, #raketenliste {
+
+}
+
+
+
+.div_konstruktion_input {
+text-align: center;
+color: white;
+background: -moz-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%, rgba(69, 72, 77, 0.5) 1%, rgba(0, 0, 0, 0.6) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69, 72, 77, 0.5)), color-stop(1%,rgba(69, 72, 77, 0.5)), color-stop(100%,rgba(0, 0, 0, 0.6)));
+background: -webkit-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -o-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -ms-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8045484d', endColorstr='#99000000',GradientType=0 );
+padding: 6px;
+border-top: 1px solid #0196E3;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+-webkit-transition-property: -webkit-box-shadow, background;
+-webkit-transition-duration: 0.25s;
+-moz-box-shadow: 0px 0px 2px #000;
+-webkit-box-shadow: 0px 0px 2px #000;
+}
+
+.div_konstruktion_submit {
+text-align: center;
+color: white;
+background: -moz-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%, rgba(69, 72, 77, 0.5) 1%, rgba(0, 0, 0, 0.6) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69, 72, 77, 0.5)), color-stop(1%,rgba(69, 72, 77, 0.5)), color-stop(100%,rgba(0, 0, 0, 0.6)));
+background: -webkit-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -o-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -ms-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8045484d', endColorstr='#99000000',GradientType=0 );
+padding: 6px;
+border-top: 1px solid #0196E3;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+-webkit-transition-property: -webkit-box-shadow, background;
+-webkit-transition-duration: 0.25s;
+-moz-box-shadow: 0px 0px 2px #000;
+-webkit-box-shadow: 0px 0px 2px #000;
+width: 100px;
+margin-bottom: 10px;
+font-weight: bold;
+font-size: 15px;
+float: right;
+}
+
+.div_konstruktion__div_submit {
+text-align: right;
+padding-right: 25px;
+}
+
+
+
+#footer /* Warum auch immer, das braucht der Chat wie ich das mitbekommen habe */
+{
+	position			:	absolute;
+	background			:	#000;
+	bottom				:	0px;
+	left				:	0px;
+	width				:	100%;
+}
+.copyr /* Warum auch immer, das braucht der Chat wie ich das mitbekommen habe */
+{
+	position			: absolute;
+	left				: 0px;
+}
+
+
+#V3_Content {
+background: #0D1014;
+border: 6px;
+border-top: none;
+-moz-border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+-webkit-border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+border-image: url(".../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+padding-bottom: 15px;
+padding-left: 10px;
+min-height: 135px;
+}
+
+table.table_bauen {
+background: #131C26;
+background: -moz-linear-gradient(top, rgba(19, 28, 38, 1) 0%, rgba(30, 43, 57, 1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(19, 28, 38, 1)), color-stop(100%,rgba(30, 43, 57, 1)));
+background: -webkit-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: -o-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: -ms-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c26', endColorstr='#1e2b39',GradientType=0 );
+margin-right: 10px;
+border: 2px solid #131820;
+padding-bottom: 25px;
+}
+
+.hidden
+{
+    display:none;    
+}
+
+
+
+#fleet_options  ul {
+float:left;
+}
+
+#fleet_options  li {
+float:left;
+list-style:none;
+padding-right:8px;
+}
+
+#fleet_options_text  ul {
+float:left;
+}
+
+#fleet_options_text  li {
+float:left;
+list-style:none;
+padding-right:8px;
+}
+#fleet_options  li.inactive {
+    opacity:0.1;
+}
+
+
+/* flotten events */
+
+#flotten-events
+{
+    position:fixed;
+    margin-left:890px;
+    top:150px;
+    background:#000;
+    width:300px;
+}
+.fleet_detail
+{
+    cursor:pointer;
+    opacity:0.8;
+}
+.fleet_detail:hover
+{
+    opacity:1;   
+}
+.fe_pc_bg
+{
+    width:150px;
+    height:10px;
+    background:gray;
+    text-align:left;
+}
+
+.fe_pc_bar
+{
+    height:10px;
+    background:#ff0000;
+    text-align:right;
+}
+.fe_pc_bar.fly_there
+{
+    text-align:right;
+    float:left;
+}
+.fe_pc_bg.fly_back
+{
+    text-align:right;
+}
+.fe_pc_bar.fly_back
+{
+    text-align:left;
+    float:right;
+}
+
+
+.flottenliste_tab {
+    
+}
+
+.flottenliste_tab tr {
+border: 1px solid #1A1F24;
+background:rgba(0,0,0,0.5);
+opacity:0.8;
+}
+
+.flottenliste_tab td {
+border: 1px solid #1A1F24;
+background:rgba(0,0,0,0.5);
+opacity:0.8;
+}
+    
+    

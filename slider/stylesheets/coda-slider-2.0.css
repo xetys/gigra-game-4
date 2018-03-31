@@ -1,0 +1,107 @@
+/* Insignificant stuff, for demo purposes */
+
+	.panel h2.title {
+margin-bottom: 10px;
+display: none;
+}
+
+	noscript div { background: #ccc; border: 1px solid #900; margin: 20px 0; padding: 15px }
+
+/* Most common stuff you'll need to change */
+
+.coda-slider-wrapper {
+text-shadow: 0 2px 0 black;
+color: #868686;
+}
+
+.coda-slider {
+overflow: hidden;
+position: relative;
+background: #131C26;
+background: -moz-linear-gradient(top, rgba(19, 28, 38, 1) 0%, rgba(30, 43, 57, 1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(19, 28, 38, 1)), color-stop(100%,rgba(30, 43, 57, 1)));
+background: -webkit-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: -o-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: -ms-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c26', endColorstr='#1e2b39',GradientType=0 );
+border: 5px solid #131820;
+padding: 5px;
+
+}
+
+	
+	/* Use this to keep the slider content contained in a box even when JavaScript is disabled */
+	.coda-slider-no-js .coda-slider { height: 200px; overflow: auto !important; padding-right: 20px }
+	
+	/* Change the width of the entire slider (without dynamic arrows) */
+.coda-slider, .coda-slider .panel {
+width: 660px;
+}
+	
+	/* Change margin and width of the slider (with dynamic arrows) */
+	.coda-slider-wrapper.arrows .coda-slider, .coda-slider-wrapper.arrows .coda-slider .panel { width: 600px }
+	.coda-slider-wrapper.arrows .coda-slider { margin: 0 10px }
+	
+	/* Arrow styling */
+	.coda-nav-left a, .coda-nav-right a { background: #000; color: #fff; padding: 5px; width: 100px }
+	
+	/* Tab nav */
+	.coda-nav ul li a.current { 
+								background: #1E2B39;
+								background: -moz-linear-gradient(top, rgba(30, 43, 57, 1) 0%, rgba(16, 24, 31, 1) 100%);
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30, 43, 57, 1)), color-stop(100%,rgba(16, 24, 31, 1)));
+								background: -webkit-linear-gradient(top, rgba(30, 43, 57, 1) 0%,rgba(16, 24, 31, 1) 100%);
+								background: -o-linear-gradient(top, rgba(30, 43, 57, 1) 0%,rgba(16, 24, 31, 1) 100%);
+								background: -ms-linear-gradient(top, rgba(30, 43, 57, 1) 0%,rgba(16, 24, 31, 1) 100%);
+								background: linear-gradient(top, rgba(30, 43, 57, 1) 0%,rgba(16, 24, 31, 1) 100%);
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e2b39', endColorstr='#10181f',GradientType=0 );
+								border-right: 1px solid #131820; 
+							}
+	
+	/* Panel padding */
+	.coda-slider .panel-wrapper {
+padding: 10px;
+}
+	
+	/* Preloader */
+	.coda-slider p.loading { padding: 20px; text-align: center }
+
+/* Don't change anything below here unless you know what you're doing */
+
+	/* Tabbed nav */
+.coda-nav ul {
+overflow: hidden;
+width: 660px !important;
+margin: 0 auto;
+padding-left: 20px;
+background: url(../../design/2-0/Gigra-Home_Headline.png) repeat-x;
+color: #619FC8;
+font-size: 15px;
+height: 27px;
+line-height: 27px;
+text-shadow: -1px -1px 0 black;
+font-weight: bold;
+}
+	}
+	
+	.coda-nav {
+		
+	}
+	.coda-nav ul li { display: inline }
+	.coda-nav ul li a {
+			display: block;
+			float: left;
+			margin-right: 1px;
+			padding: 3px 6px;
+			text-decoration: none;
+			color: #619FC8;
+			text-shadow: -1px -1px 0 black !important;
+		}
+	
+	/* Miscellaneous */
+	.coda-slider .panel { display: block; float: left }
+	.coda-slider .panel-container { position: relative }
+	.coda-nav-left, .coda-nav-right { float: left }
+	.coda-nav-left a, .coda-nav-right a { display: block; text-align: center; text-decoration: none }
+	

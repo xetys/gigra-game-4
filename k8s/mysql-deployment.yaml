@@ -1,0 +1,43 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f ../docker/docker-compose.yaml
+    kompose.version: 1.11.0 (39ad614)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mysql
+  name: mysql
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: mysql
+    spec:
+      containers:
+      - args:
+        - mysqld
+        - --lower_case_table_names=1
+        - --skip-ssl
+        env:
+        - name: MYSQL_DATABASE
+          value: gigra
+        - name: MYSQL_ROOT_PASSWORD
+          value: root
+        - name: MYSQL_USER
+          value: root
+        image: mysql:5.5
+        name: db
+        resources: {}
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: mysql-claim0
+      restartPolicy: Always
+      volumes:
+      - name: mysql-claim0
+        persistentVolumeClaim:
+          claimName: mysql-claim0

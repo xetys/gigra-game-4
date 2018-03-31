@@ -1,0 +1,2518 @@
+@import url("2-0/class.css");
+* {
+padding:0px;
+border:0px;
+outline:o�x;
+margin:0px;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* ------------------------------------top-nav.css--------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+ul#Top-Nav {
+}
+
+  ul#Top-Nav li {
+    list-style: none;
+    display: inline;
+    margin: 0.4em; padding: 0;
+}
+
+
+
+  ul#Top-Nav a, ul#Top-Nav span {
+
+display: inline;
+text-decoration: none;
+float: left;
+padding: 10px;
+background: url(../2-0/Gigra-Button_Tab.png);
+color: white;
+margin: -11px -1px 0px 0px;
+width: 109px;
+height: 25px;
+text-align: center;
+padding-top: 14px;
+font-weight:bold;
+
+  }
+
+  * html ul#Top-Nav a, * html ul#Top-Nav span {
+
+    width: 1em;    /* nur fuer IE 5.0x erforderlich */
+
+    w/idth: auto;  /* sicherheitshalber fuer IE 6 zurueckgesetzt */
+
+  }
+
+  ul#Top-Nav a:hover, ul#Top-Nav span {
+color:#48B;
+
+  }
+
+
+
+#Top-Nav li.inactive
+{
+display: inline;
+text-decoration: none;
+float: left;
+padding: 10px;
+background: url(../2-0/Gigra-Button_Tab.png);
+color: white;
+margin: -11px -1px 0px 0px;
+width: 109px;
+height: 25px;
+text-align: center;
+padding-top: 14px;
+font-weight:bold;
+    opacity:0.3;   
+}
+
+table #Top-Nav {
+
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* ------------------------------------tooltip.css--------------------------------- */
+/* -------------------------------------------------------------------------------- */
+div > .tooltip, li > .tooltip, a > .tooltip, div > .tooltip {
+    opacity: 0;
+    margin-top: -10px;
+	visibility: hidden;
+	margin-left: -65px;
+	width: 204px;
+
+
+}
+
+	div:hover > .tooltip, li:hover > .tooltip, a:hover > .tooltip, div:hover > .tooltip,
+	a .tooltip:hover, div .tooltip:hover, li .tooltip:hover, div .tooltip:hover {
+		opacity: 1;
+		visibility: visible;
+		overflow: visible;
+		margin-top: 30px;
+		display: inline;
+		margin-left: 10px;
+        margin-top:-20px;
+		width: 204px;
+		
+	
+	}
+
+.tooltip {
+	padding: 10px;
+	margin-left: -40px;
+	position: absolute;
+	font-family: Arial;
+	font-size: 12px;
+	text-decoration: none;
+	font-style: normal;
+	color: #999;
+	z-index: 10;	
+}
+
+		.tooltip div { }
+	
+.tooltip_h1 {
+background: url(../2-0/Gigra-Tooltip-Galaxie-Header.png) no-repeat;
+height: 28px;
+padding-top: 5px;
+color: #619FC8;
+position: absolute;
+z-index: 5;
+padding-left: 25px;
+width: 215px;
+}
+	
+.tooltip_content {
+background: #0D1014;
+border: 4px solid #10181F;
+padding-left: 10px;
+overflow: auto;
+margin-top: 18px;
+z-index: 50;
+position: relative;
+padding-top: 25px;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+-webkit-border-radius: 0px 0px 5px 5px;
+border-radius: 0px 0px 5px 5px;
+padding-bottom: 10px;
+min-width: 196px;
+}
+
+
+    
+a.bau_info{
+    position:relative; /*this is the key*/
+    z-index:90; 
+    color:#000;
+    text-decoration:none;
+    }
+
+a.bau_info:hover{z-index:95;}
+a.bau_info span{display: none}
+a.bau_info:hover span{
+    display:block;
+	position:relative;
+	top:2em; 
+    left:2em; 
+    width:200px;
+	color:#ccc;
+	background: #0D1014;
+	border: 4px solid #10181F;
+    padding:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index:51;
+	}
+		
+		
+/* -------------------------------------------------------------------------------- */
+/* ------------------------------------planeten.css-------------------------------- */
+/* -------------------------------------------------------------------------------- */
+#planeten-box {
+width: 640px;
+height: 110px;
+overflow: hidden;
+}
+.planet-slide li
+{
+    float:left;
+    list-style:none;
+    text-align:center;
+}
+.planet-slide li a img
+{
+    width:40px;    
+    height:40px;
+}
+/*
+.planet-slide li.planet-active a img
+{
+    width:80px;    
+    height:80px;
+}*/
+.planet-active {
+/*    background: url(../planet-active.png) no-repeat;*/
+    color:#00ff00;
+    padding-left: 5px;
+}
+    			
+		.planeten_list {
+			padding:10px;
+		}
+.planet-overlay
+{
+    position:relative;
+    width: 85px;
+    height: auto;
+    overflow:hidden;
+    top:-80px;
+    background:transparent;
+    text-align:left;
+}
+/* -------------------------------------------------------------------------------- */
+/* ------------------------------------lightbox.css-------------------------------- */
+/* -------------------------------------------------------------------------------- */
+.black_overlay{
+    		display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index:1001;
+			-moz-opacity: 0.8;
+			opacity:.80;
+			filter: alpha(opacity=80);
+                -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+	transition: 0.25s;
+		}
+.white_content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    width: 665px;
+    padding: 16px;
+    z-index: 1002;
+    overflow: auto;
+    padding-bottom: 0;
+    padding-left: 10px;
+    min-height: 135px;
+    margin-left: -630px;
+    border-image: initial;
+    background-color: #0D1014;
+    border: 2px solid black;
+    color: #6F9FC8;
+    overflow-x: auto;
+    height: 500px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------ressbar.css-------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+#ressbar {
+/*
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px;
+-webkit-border-radius: 0px 0px 10px 10px;
+border-radius: 0px 0px 10px 10px;
+border: 4px solid #131820;
+-webkit-box-shadow: 0px 3px 10px #26628f;
+-moz-box-shadow: 0px 3px 50px #26628f;
+box-shadow: 0px 3px 10px #26628f; 
+*/
+position: fixed;
+top: 0px;
+z-index: 100;
+
+}
+
+#headimage {
+position: absolute;
+top: 0px;
+z-index:100;
+}
+    
+
+#ressbartable {
+    margin-bottom: -67px;
+}
+
+	
+#ressbartable .rowa {
+height: 20px;
+color: #999;
+/* background: url(../2-0/Gigra-Home_Headline.png) repeat-x; */
+}
+#ressbartable .rowb {
+
+}
+#ressbartable .cell {
+text-align: center;
+padding-right: 20px;
+padding-bottom: 5px;
+padding-top: 0px;
+}
+
+/* Mail Icon - Anfang  */
+.mail_icon {
+background: url(../2-0/Gigra-Mail-Icon.png) no-repeat;
+position: relative;
+top: 5px;
+padding-right: 25px;
+padding-top: 19px;
+padding-left: 22px;
+left: 14px;
+}
+
+.mail_icon:hover {
+background: url(../2-0/Gigra-Mail-Icon_hover.png) no-repeat;
+position: relative;
+top: 5px;
+padding-right: 25px;
+padding-top: 19px;
+padding-left: 22px;
+left: 14px;
+}
+
+/* Mail Icon - Ende  */
+
+
+
+.sub_msg_fl {
+font-size: 12px;
+position: absolute;
+margin-top: -23px;
+margin-left: 36px;
+color: red;
+}
+
+.sub_msg {
+font-size: 12px;
+position: absolute;
+margin-top: -23px;
+margin-left: 36px;
+color: #999;
+}
+
+#ressbartable .coll8 {
+padding: 2px;
+text-align: center;
+}
+
+.resbar-td-icon_1 {
+min-height:32px;
+min-width:32px;
+background:url(../2-0/Gigra-Mail-Icon.png) no-repeat;
+
+}
+
+.resbar-td-icon_2{
+min-height:32px;
+min-width:32px;
+background:url(../2-0/Gigra-Man-Icon.png) no-repeat;
+}
+
+#resbar {
+    position:fixed;
+    top:0px;
+    width:99.9%
+    }
+
+.ressbar_table_img_bg {
+margin: 0 auto;
+}
+
+.ressbar_table_img_bg_a {
+background:url(../2-0/ressbar_tabelle_bg_a.jpg) no-repeat;
+height:56px;
+min-height:56px;
+max-height:56px;
+width:31px;
+min-width:31px;
+max-width:31px;
+padding:0px;
+margin:0px;
+border:0px;
+}
+
+.ressbar_table_img_bg_b {
+background:url(../2-0/ressbar_tabelle_bg_b.jpg) repeat-x;
+height:56px;
+min-height:56px;
+max-height:56px;
+padding:0px;
+margin:0px;
+border:0px;
+}
+
+.ressbar_table_img_bg_c {
+background:url(../2-0/ressbar_tabelle_bg_c.jpg) no-repeat;
+height:56px;
+min-height:56px;
+max-height:56px;
+width:63px;
+min-width:63px;
+max-width:63px;
+padding:0px;
+margin:0px;
+border:0px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------left-lav.css------------------------------- */
+/* -------------------------------------------------------------------------------- */
+#navigationMenu {
+position: absolute;
+top: 100px;
+margin-left: -35px;
+}
+
+
+#navigationMenu li{
+    list-style:none;
+	height:34px;
+	width:34px;
+}
+
+#navigationMenu span{
+	width:0;
+	right:38px;
+	padding:0;
+	position:absolute;
+	overflow:hidden;
+
+
+font-family: Arial, Helvetica, Tahoma, Sans-Serif;
+font-size: 10pt;
+font-weight: normal;
+	letter-spacing:0.6px;
+	white-space:nowrap;
+	line-height:39px;
+	
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	transition: 0.25s;
+}
+
+#navigationMenu a{
+	background:url('../../design/2-0/icons/Gigra-Navigation.png') no-repeat;
+	height:34px;
+	width:34px;
+	display:block;
+	position:relative;
+}
+
+/* General hover styles */
+
+#navigationMenu a span {
+overflow: visible;
+line-height: 26px;
+background: url("../../design/2-0/icons/Navigation_span_bg.png") 0 -30px no-repeat;
+width: 160px;
+height: 30px;
+margin-top: 2px;
+text-align: center;
+padding-top: 2px;
+}
+
+#navigationMenu a span:hover {
+overflow: visible;
+line-height: 26px;
+background: url("../../design/2-0/icons/Navigation_span_bg.png") 0 0 no-repeat;
+width: 160px;
+height: 30px;
+margin-top: 2px;
+text-align: center;
+padding-top: 2px;
+}
+
+#navigationMenu a:hover{
+
+}
+
+/* Bau?bersicht */
+
+#navigationMenu .bau {	background-position:0 0;}
+#navigationMenu .bau:hover {background-position:0 -34px;}
+#navigationMenu .bau span{ }
+
+/* Rohstoffe */
+
+#navigationMenu .ress { background-position:-34px 0;}
+#navigationMenu .ress:hover {background-position:-34px -34px;}
+#navigationMenu .ress span{ }
+
+/* Galaxie */
+
+#navigationMenu .galaxie { background-position:-68px 0;}
+#navigationMenu .galaxie:hover { background-position:-68px -34px;}
+#navigationMenu .galaxie span{ }
+
+/* Highscore */
+
+#navigationMenu .highscore { background-position:-102px 0;}
+#navigationMenu .highscore:hover { background-position:-102px -34px;}
+#navigationMenu .highscore span{}
+
+/* Technik */
+
+#navigationMenu .technik { background-position:-136px 0;}
+#navigationMenu .technik:hover { background-position:-136px -34px;}
+#navigationMenu .technik span{}
+
+/* Erfahrung */
+
+#navigationMenu .erfahrung { background-position:-170px 0;}
+#navigationMenu .erfahrung:hover { background-position:-170px -34px;}
+#navigationMenu .erfahrung span{}
+
+/* Informationen */
+
+#navigationMenu .informationen { background-position:-204px 0;}
+#navigationMenu .informationen:hover { background-position:-204px -34px;}
+#navigationMenu .informationen span{}
+
+/* Allianz */
+
+#navigationMenu .allianz { background-position:-238px 0;}
+#navigationMenu .allianz:hover { background-position:-238px -34px;}
+#navigationMenu .allianz span{}
+
+/* Forum */
+
+#navigationMenu .forum { background-position:-272px 0;}
+#navigationMenu .forum:hover { background-position:-272px -34px;}
+#navigationMenu .forum span{}
+
+/* Serverstatus */
+
+#navigationMenu .serverstatus { background-position:-306px 0;}
+#navigationMenu .serverstatus:hover { background-position:-306px -34px;}
+#navigationMenu .serverstatus span{}
+
+/* Einstellungen */
+
+#navigationMenu .einstellungen { background-position:-340px 0;}
+#navigationMenu .einstellungen:hover { background-position:-340px -34px;}
+#navigationMenu .einstellungen span{}
+
+/* Kampfsimulator */
+
+#navigationMenu .kampfsimulator { background-position:-374px -34px;}
+#navigationMenu .kampfsimulator:hover { background-position:-374px -34px;}
+#navigationMenu .kampfsimulator span{}
+
+/* Ausloggen */
+
+#navigationMenu .ausloggen { background-position:-408px 0;}
+#navigationMenu .ausloggen:hover { background-position:-408px -34px;}
+#navigationMenu .ausloggen span{}
+
+/* -------------------------------------------------------------------------------- */
+/* ---------------------------------------chat.css--------------------------------- */
+/* -------------------------------------------------------------------------------- */
+#chat-line
+{
+	position			:	relative;
+	left				:	-50px;
+}
+#chat-self {
+height: 280px;
+color: #B0B0B0;
+word-wrap: break-word;
+margin-left: -5px;
+margin-top: -22px;
+}
+
+#chat-line {
+position: relative;
+left: 0;
+border-top: 1px solid #999;
+width: 650px;
+margin-left: -15px;
+}
+
+#chat-self {
+overflow-x:hidden;
+overflow-y:scroll;
+
+}
+
+#chat-input {
+width: 650px;
+height: 20px;
+margin-top: 10px;
+}
+
+#chat-input:focus{
+color:#999;
+outline:none;
+border:#35a5e5 1px solid;
+box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+font-family: Arial, Helvetica, Tahoma, Sans-Serif;
+font-size: 10pt;
+font-weight: normal;
+		background: #131C26;
+		background: -moz-linear-gradient(top, rgba(19, 28, 38, 1) 0%, rgba(30, 43, 57, 1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(19, 28, 38, 1)), color-stop(100%,rgba(30, 43, 57, 1)));
+		background: -webkit-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		background: -o-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		background: -ms-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		background: linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c26', endColorstr='#1e2b39',GradientType=0 );
+opacity:1;
+}
+
+
+.chat_senden {
+ 
+border:#999 1px solid;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+	-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+	-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+	background:rgba(153,153,153, 0.1);
+font-family: Arial, Helvetica, Tahoma, Sans-Serif;
+font-size: 10pt;
+font-weight: normal;
+opacity:0.2;
+width: 80px;
+height: 27px;
+ 
+}
+.chat_senden:hover {
+color:#999;
+outline:none;
+border:#35a5e5 1px solid;
+box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+font-family: Arial, Helvetica, Tahoma, Sans-Serif;
+font-size: 10pt;
+font-weight: normal;
+		background: #131C26;
+		background: -moz-linear-gradient(top, rgba(19, 28, 38, 1) 0%, rgba(30, 43, 57, 1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(19, 28, 38, 1)), color-stop(100%,rgba(30, 43, 57, 1)));
+		background: -webkit-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		background: -o-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		background: -ms-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		background: linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c26', endColorstr='#1e2b39',GradientType=0 );
+opacity:1;
+width: 80px;
+height: 27px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ----------------------------------buildinfo-box.css----------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+/* --- Info Box --- */
+
+#divInfo {
+
+}
+
+/*
+#buildInfo-box {
+background: #0D1014;
+border: 5px;
+text-shadow: 0 2px 0 black;
+color: #868686;
+-webkit-box-shadow: inset 0px 0px 1px 5px #131820;
+-moz-box-shadow: inset 0px 0px 1px 5px #131820;
+box-shadow: inset 0px 0px 1px 5px #131820;
+background: -moz-linear-gradient(top, rgba(19, 28, 38, 1) 0%, rgba(30, 43, 57, 1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(19, 28, 38, 1)), color-stop(100%,rgba(30, 43, 57, 1)));
+background: -webkit-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: -o-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: -ms-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c26', endColorstr='#1e2b39',GradientType=0 );
+width: 300px;
+position: fixed;
+margin-left: 890px;
+margin-top: 195px;
+}
+*/
+
+
+#buildInfo-box {
+text-shadow: 0 2px 0 black;
+color: #868686;
+width: 300px;
+position: absolute;
+-webkit-box-shadow: inset 0px 0px 1px 5px #131820;
+-moz-box-shadow: inset 0px 0px 1px 5px #131820;
+box-shadow: inset 0px 0px 1px 5px #131820;
+background: -moz-linear-gradient(top, rgba(19, 28, 38, 1) 0%, rgba(30, 43, 57, 1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(19, 28, 38, 1)), color-stop(100%,rgba(30, 43, 57, 1)));
+background: -webkit-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: -o-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: -ms-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c26', endColorstr='#1e2b39',GradientType=0 );
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 10px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 0px;
+-webkit-border-radius: 0px 10px 10px 0px;
+border-radius: 0px 10px 10px 0px;
+z-index: 10;
+margin-left: 160px;
+}
+
+.DivInfoContent_img {
+text-align: center;
+}
+
+.DivInfoContent_ress {
+text-align: center;
+font-weight: bold;
+padding: 5px;
+}
+
+.DivInfoContent_cancel {
+text-align: center;
+padding: 6px;
+color: white;
+background: -moz-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%, rgba(69, 72, 77, 0.5) 1%, rgba(0, 0, 0, 0.6) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69, 72, 77, 0.5)), color-stop(1%,rgba(69, 72, 77, 0.5)), color-stop(100%,rgba(0, 0, 0, 0.6)));
+background: -webkit-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -o-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -ms-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8045484d', endColorstr='#99000000',GradientType=0 );
+padding: 6px;
+border-top: 1px solid #0196E3;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+-webkit-transition-property: -webkit-box-shadow, background;
+-webkit-transition-duration: 0.25s;
+-moz-box-shadow: 0px 0px 2px #000;
+-webkit-box-shadow: 0px 0px 2px #000;
+}
+
+.DivInfoContent a {
+text-align:right;
+}
+
+.DivInfoContent {
+width:100%;
+padding:20px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -----------------------------------information.css------------------------------ */
+/* -------------------------------------------------------------------------------- */
+.info, .success, .warning, .error, .validation, .hidden_error {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+	background-color:#151515;
+	
+
+border: 6px;
+text-shadow: 0 2px 0 black;
+-moz-border-image: url(".../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+-webkit-border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+}
+.info {
+    color: #00529B;
+    background-image: url('../2-0/info.png');
+}
+.success {
+    color: #4F8A10;
+    background-image:url('../2-0/success.png');
+}
+.warning {
+    color: #9F6000;
+    background-image: url('../2-0/warning.png');
+}
+.error, .hidden_error{
+    color: #D8000C;
+    background-image: url('../2-0/error.png');
+}
+
+/*
+<div class="info">Info message</div>
+
+<div class="success">Successful operation message</div>
+
+<div class="warning">Warning message</div>
+
+<div class="error">Error message</div>
+*/
+
+
+/* -------------------------------------------------------------------------------- */
+/* ---------------------------------------gigra.css-------------------------------- */
+/* -------------------------------------------------------------------------------- */
+.clear
+{
+    clear:both;   
+}
+* {
+  font-family:          Arial, Helvetica, Tahoma, Sans-Serif;
+  font-size:            10pt;
+  font-weight:          normal;
+  outline:none;
+  padding:0;
+}
+
+/* Body */
+body {
+font-size: 0.825em;
+color: #FCFCFC;
+background: black url(../2-0/bg_1920X1080.jpg) no-repeat top fixed;
+-moz-background-size: 100% 100%;
+-o-background-size: 100% 100%;
+-webkit-background-size: 100% 100%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* wrapper */
+#wrapper {
+
+}
+
+/* Content */
+#content {
+float: left;
+width: 100%;
+margin: -200px auto;
+}
+
+
+/* main-wrapper */
+#main-wrapper {
+margin: 101px auto;
+width: 680px;
+}
+
+
+/* main */
+#main-content {
+margin:0 auto;
+}
+
+.table_logout {
+width:519px;
+}
+
+
+.v3_table {
+width:630px;
+margin:0 auto;
+}
+
+
+p
+{
+	margin-bottom			:	1px;
+}
+table  { 
+
+}
+td
+{
+	text-align			: left;
+}
+th {
+background: url(../2-0/infrahead.png) repeat-x;
+height: 10px;
+padding-top: 3px;
+padding-left: 15px;
+font-weight: bold;
+color: #619FC8;
+
+}
+td.b, td.l, td.k, td.f, td.t, th {
+  border-color:         #223344;
+  border-width:         1px;
+  border-style:         solid;
+}
+td.b, td.l, td.k {
+  background-color:     #112233;
+}
+
+td.c {
+border: 1px solid #484848;
+font-size: 12px;
+font-weight: bold;
+display: table-cell;
+vertical-align: inherit;
+}
+
+
+td.f {
+  background-color:     #CC0000;
+  color:                #FFFFFF;
+  font-weight:bold;
+  text-align:           center;
+}
+td.k {
+  text-align:           center;
+}
+td.t {
+  text-align:           center;
+  background-color:     #333333;
+}
+
+select,input,textarea {
+  background-color:     #1D2A38;
+  color:                #FFFFFF;
+  border-color:         #131820;
+  border-width:         1px;
+  border-style:         solid;
+  font-size:            12px;
+}
+
+select {
+background: -moz-radial-gradient(50% 46% 90deg,circle closest-corner, #252525, #090909);
+background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#252525), to(#090909));
+background: #111;
+-moz-box-shadow: 0px 0px 4px #000 inset;
+-webkit-box-shadow: 0px 0px 4px #000 inset;
+box-shadow: 0px 0px 4px #000 inset;
+outline: 1px solid #333;
+border: 1px solid black;
+}
+
+img {
+border:none;
+}
+
+.quote {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #103050;
+    margin: 3px;
+    padding: 1px;
+    background: #141E26;
+}
+.author {
+  border-style:         solid;
+  border-width:         1px;
+  border-color:         #FFFFFF;
+  background-color:     #103050;
+  color:                #FFFFFF;
+  margin:               0px;
+  padding:              2px;
+}
+
+a {
+  color:                #FFFFFF;
+  font-weight:          bold;
+  text-decoration:      none;
+}
+a.s {
+  color:                #00FF00;
+}
+a.t {
+  color:                #FF0000;
+}
+a:hover {
+  color:                #4488BB;
+  text-decoration:      none;
+}
+
+.a {
+  font-size:            16px;
+}
+.g {
+  font-size:            12px;
+  text-decoration:      none;
+}
+.tiny {
+font-size:              10px;
+}
+.buttonlike
+{
+	width				:	150px;
+	background			:	#112233;
+	color				:	#223344;
+	border				:	1px #223344 solid;
+	opacity				:	0.8;
+}
+
+#evalB, #evalF, .hiddenInfo
+{
+	display				:	none;
+}
+
+
+#bauliste, #forschliste, #schiffliste, #verteidigungsliste, #raketenliste {
+
+}
+
+
+
+
+.div_konstruktion_input {
+text-align: center;
+color: white;
+background: -moz-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%, rgba(69, 72, 77, 0.5) 1%, rgba(0, 0, 0, 0.6) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69, 72, 77, 0.5)), color-stop(1%,rgba(69, 72, 77, 0.5)), color-stop(100%,rgba(0, 0, 0, 0.6)));
+background: -webkit-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -o-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -ms-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8045484d', endColorstr='#99000000',GradientType=0 );
+padding: 6px;
+border-top: 1px solid #0196E3;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+-webkit-transition-property: -webkit-box-shadow, background;
+-webkit-transition-duration: 0.25s;
+-moz-box-shadow: 0px 0px 2px #000;
+-webkit-box-shadow: 0px 0px 2px #000;
+background:black;
+}
+
+.div_konstruktion_submit {
+text-align: center;
+color: white;
+background: -moz-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%, rgba(69, 72, 77, 0.5) 1%, rgba(0, 0, 0, 0.6) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69, 72, 77, 0.5)), color-stop(1%,rgba(69, 72, 77, 0.5)), color-stop(100%,rgba(0, 0, 0, 0.6)));
+background: -webkit-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -o-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -ms-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8045484d', endColorstr='#99000000',GradientType=0 );
+padding: 6px;
+border-top: 1px solid #0196E3;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+-webkit-transition-property: -webkit-box-shadow, background;
+-webkit-transition-duration: 0.25s;
+-moz-box-shadow: 0px 0px 2px #000;
+-webkit-box-shadow: 0px 0px 2px #000;
+width: 100px;
+margin-bottom: 10px;
+font-weight: bold;
+font-size: 15px;
+float: right;
+}
+
+.div_konstruktion__div_submit {
+text-align: right;
+padding-right: 25px;
+}
+
+
+
+#footer /* Warum auch immer, das braucht der Chat wie ich das mitbekommen habe */
+{
+	position			:	fixed;
+	background          : url("../../design/2-0/Gigra-Home_Headline.png") repeat-x scroll 0 0 transparent;
+    color               : #619FC8 !important;
+    font-size           : 15px;
+    padding             : 5px 0 0 0;
+    height              : 25px;
+	bottom				:	0px;
+	left				:	0px;
+	width				:	100%;
+    text-align          :   center;
+    z-index             : 50;
+    opacity             : 0.5;
+}
+
+#footer:hover /* Warum auch immer, das braucht der Chat wie ich das mitbekommen habe */
+{
+    position			:	fixed;
+	background          : url("../../design/2-0/Gigra-Home_Headline.png") repeat-x scroll 0 0 transparent;
+    color               : #619FC8 !important;
+    font-size           : 15px;
+    padding             : 5px 0 0 0;
+    height              : 25px;
+	bottom				:	0px;
+	left				:	0px;
+	width				:	100%;
+    text-align          :   center;
+    z-index             : 50;
+    opacity             : 1;
+}
+.copyr /* Warum auch immer, das braucht der Chat wie ich das mitbekommen habe */
+{
+	position			: absolute;
+	left				: 0px;
+}
+
+
+#V3_Content {
+background: #0D1014;
+border: 6px;
+border-top: none;
+-moz-border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+-webkit-border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+border-image: url(".../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+padding-bottom: 15px;
+min-height: 135px;
+}
+
+table.table_bauen {
+
+}
+
+.bauen {
+width:660px;
+}
+
+.hidden
+{
+    display:none;    
+}
+
+.bau_tooltip_head {
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+#fleet_options  ul {
+float:left;
+}
+
+#fleet_options  li {
+float:left;
+list-style:none;
+padding-right:8px;
+}
+
+#fleet_options_text  ul {
+float:left;
+}
+
+#fleet_options_text  li {
+float:left;
+list-style:none;
+padding-right:8px;
+}
+#fleet_options  li.inactive {
+    opacity:0.1;
+}
+
+
+/* flotten events */
+
+#flotten-events {
+position: absolute;
+margin-left: 680px;
+width: 285px;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 10px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 0px;
+-webkit-border-radius: 0px 10px 10px 0px;
+border-radius: 0px 10px 10px 0px;
+background: rgba(0, 0, 0, 0.6);
+/*max-height: 700px;
+overflow-y: auto;
+overflow-x: hidden;*/
+}
+.fleet_detail
+{
+    cursor:pointer;
+    opacity:0.8;
+    width:300px;
+}
+.fleet_detail:hover
+{
+    opacity:1;   
+}
+.fe_pc_bg
+{
+    width:150px;
+    height:10px;
+    background:gray;
+    text-align:left;
+}
+
+.fe_pc_bar
+{
+    height:10px;
+    background:#ff0000;
+    text-align:right;
+}
+.fe_pc_bar.fly_there
+{
+    text-align:right;
+    float:left;
+}
+.fe_pc_bg.fly_back
+{
+    text-align:right;
+}
+.fe_pc_bar.fly_back
+{
+    text-align:left;
+    float:right;
+}
+
+
+.flottenliste_tab {
+    
+}
+
+.flottenliste_tab tr {
+border: 1px solid #1A1F24;
+background:rgba(0,0,0,0.5);
+opacity:0.8;
+}
+
+.flottenliste_tab td {
+border: 1px solid #1A1F24;
+background:rgba(0,0,0,0.5);
+opacity:0.8;
+}
+
+
+.flotten_incons_img {
+width:50px;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------overview-box.css--------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* --- ?bersicht Box --- */
+#BuildOver-Box {
+
+padding-left: 20px;
+z-index: 1;*/
+/*
+background: url('../../design/2-0/Gigra-Div-Uebersicht-BG.png') no-repeat;
+position: fixed;
+margin-left: -291px;
+width: 265px;
+height: 192px;
+padding-left: 26px;
+padding-top: 20px;
+top: 98px;
+z-index: -1;*/
+}
+
+.BuildOver-Box_Table {
+padding-top: 15px;
+margin-left: -5px;
+}
+
+.overview_einst_btn {
+    
+}
+
+/* -------------------------------------------------------------------------------- */
+/* --------------------------------------nachrichten.css--------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.mgstext {
+}
+
+.msgs {
+
+}
+
+#mgs_content {
+
+    }
+
+.mgscmd {
+
+
+}
+
+#sub_msg {cursor:pointer;}
+#sub_msg {cursor: pointer;}
+#mgsview {cursor: pointer;}
+
+.msg_head {
+
+
+
+}
+
+.msg_content {
+
+}
+
+.msg_replay {
+padding:5px;
+float:right;
+}
+
+.msg_subject {
+
+}
+
+.p_mgs_content {
+      color: #868686;
+background-color: #13181D;
+border: 1px solid black;  
+padding-left:5px;
+    }
+
+.p_mgs_content_text {
+    color: #868686;
+background-color: #13181D;
+border: 1px solid black;
+padding: 10px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -----------------------------------------galaxie.css---------------------------- */
+/* -------------------------------------------------------------------------------- */
+#galaxy-container {
+}
+    
+#galaxie_tabele {
+width: 100%;
+background:url('../../design/2-0/Gigra-Galaxie_bg.jpg');
+}
+
+#galaxie_tabele td {
+border:1px solid #1A1F24;
+}
+
+#galaxie_tabele tr {
+border:1px solid #1A1F24;
+}
+
+
+.galaxie_planibox_verlassen_a {
+
+}
+
+.galaxie_planibox_verlassen_img {
+position: relative;
+top: 0px;
+}
+
+.galaxie_planibox_verlassen_span {
+position: relative;
+top: -22px;
+}
+
+.galaxie_tr {
+background:rgba(0,0,0,0.5);
+opacity:0.8;
+    
+    }
+    
+.galaxie_tr:hover {
+background:rgba(0,0,0,0); 
+opacity:1;
+    }
+    
+.galaxie_tr_player {
+background:rgba(0,0,0,0.2);
+opacity:0.8;
+  
+    }
+    
+.galaxie_tr_player:hover {
+background:rgba(0,0,0,0);
+opacity:1;
+ 
+    }
+    
+.galaxie_td {
+text-align:center;   
+}
+
+
+.Galaxie_form {
+height: 46px;
+background: url('../../design/2-0/Gigra-Galaxie_form_bg.png') no-repeat;
+padding-left: 105px;
+}
+
+
+.tooltip_h1_span {
+color: #6F9FC8;
+font-size: 11px;
+font-weight: 700;
+height:27px;
+text-align: left;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------news.css----------------------------- */
+/* -------------------------------------------------------------------------------- */
+.news-wrapper {
+margin-top: -25px;
+padding: 10px;
+
+}
+
+.news-head {
+background: url(../2-0/Gigra-News-Header.png) repeat-x;
+height: 34px;
+padding-top: 8px;
+padding-left: 15px;
+font-weight: bold;
+}
+
+.news-content {
+background: #151515;
+margin-top: -8px;
+padding: 10px;
+}
+
+.news-time, .news-archiv {
+text-align: right;
+padding-top: 18px;
+}
+
+.news-text {
+
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------bau_bilder.css----------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.bau_cube {
+width: 142px;
+height: 145px;
+float: left;
+margin: 9px;
+}
+
+.bau_overpic {
+width: 159px;
+height: 159px;
+float: left;
+background: url(../2-0/Gigra-Bauuebersicht_BG_v3.png) no-repeat;
+margin-left: -10px;
+margin-top: -10px;
+padding-top: 11px;
+padding-left: 11px;
+}
+
+.bau_info_show {
+    width: 115px;
+    height: 140px;
+    float: left;
+}
+
+.bau_image_right_side {
+width: 25px;
+height: 140px;
+display: inline-block;
+position: absolute;
+margin-left: 113px;
+-moz-border-radius-topleft: 2px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 2px;
+-webkit-border-radius: 2px 5px 5px 2px;
+border-radius: 2px 5px 5px 2px;
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.15)), color-stop(100%,rgba(255,255,255,0.15))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 100%); /* IE10+ */
+background: linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#26ffffff',GradientType=1 ); /* IE6-8 */
+
+
+
+
+}
+
+.bau_overpic_schiffe {
+width: 159px;
+height: 159px;
+float: left;
+background: url(../2-0/Gigra-Bauuebersicht_BG_v3_schiffe.png) no-repeat;
+margin-left: -10px;
+margin-top: -10px;
+padding-top: 11px;
+padding-left: 11px;
+}
+
+.bau_top {
+color: white;
+padding: 1px;
+}
+
+.bau_top_right {
+position: absolute;
+margin-top:4px;
+opacity:0.5;
+z-index:50;
+
+}
+
+.bau_top_right:hover {
+position: absolute;
+margin-top: 4px;
+opacity:1;
+z-index:50;
+}
+
+.bau_top_right_middle {
+position: absolute;
+margin-top: 25px;
+opacity:0.5;
+z-index:50;
+}
+
+.bau_top_right_middle:hover {
+position: absolute;
+margin-top: 25px;
+opacity:1;
+z-index:50;
+}
+
+.bau_top_right_bottom {
+position: absolute;
+opacity: 0.5;
+z-index: 50;
+margin-left: 116px;
+margin-top: -15px;
+}
+
+.bau_top_right_bottom:hover {
+position: absolute;
+opacity: 1;
+z-index: 50;
+margin-left: 116px;
+margin-top: -15px;
+}
+
+
+.bau_top.onprogress {
+position: relative;
+top: -151px;
+left: 4px;
+}
+
+
+.bau_bottom {
+position: relative;
+top: 110px;
+left: 3px;
+color: white;
+}
+
+
+.bau_bottom.onprogress
+{
+    top:-40px;   
+}
+.res_bottom.onprogress
+{
+    top:-120px;   
+    opacity:1;
+}
+
+.bau_cant_build
+{
+	opacity				:	0.4;
+}
+
+
+.bau_unable {
+background: rgba(0, 0, 0, 0.8);
+width: 141px;
+height: 141px;
+position: relative;
+top: 0;
+left: 0;
+z-index: 1;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.cube_php {
+background: url("cube.php?size=145");
+opacity: 0.5;
+position: relative;
+top: 1px;
+left: 1px;
+overflow: hidden;
+height: 144px;
+width: 141px;
+}
+
+
+.table_produktion {
+width: 100%;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.table_produktion td {
+padding-left: 10px;
+}
+
+.prod_btn_cancel {
+
+}
+
+.global_cancel {
+background: url(../2-0/global_cancel.png) no-repeat;
+padding-top: 8px;
+padding-bottom: 8px;
+}
+
+.prod_ges {
+background:#1B1B1B;
+}
+/* -------------------------------------------------------------------------------- */
+/* ----------------------------nachrichten_schreiben.css--------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.mgs_replay_head {
+background: #112229;
+background: -moz-linear-gradient(top, rgba(17, 34, 41, 1) 0%, rgba(9, 18, 25, 1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(17, 34, 41, 1)), color-stop(100%,rgba(9, 18, 25, 1)));
+background: -webkit-linear-gradient(top, rgba(17, 34, 41, 1) 0%,rgba(9, 18, 25, 1) 100%);
+background: -o-linear-gradient(top, rgba(17, 34, 41, 1) 0%,rgba(9, 18, 25, 1) 100%);
+background: -ms-linear-gradient(top, rgba(17, 34, 41, 1) 0%,rgba(9, 18, 25, 1) 100%);
+background: linear-gradient(top, rgba(17, 34, 41, 1) 0%,rgba(9, 18, 25, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#112229', endColorstr='#091219',GradientType=0 );
+height: 26px;
+text-align:center;
+}
+
+.nachrichten_schreiben_textarea_input {
+width: 65%;
+background: #192430;
+border: 2px solid #131820;
+-moz-border-radius: .4em;
+margin: 0 auto;
+border-image: initial;
+}
+
+#nachricht_replay {
+    background-color: #0D1014;
+border: 2px solid black;
+padding:10px;
+    }
+
+/* -------------------------------------------------------------------------------- */
+/* ----------------------------------highscore.css--------------------------------- */
+/* -------------------------------------------------------------------------------- */
+.highrscore_form {
+height: 46px;
+background: url('../../design/2-0/Gigra-Galaxie_form_bg.png') no-repeat;
+padding-left: 205px;
+}
+    
+.highrscore_table {
+   width:100%; 
+    }
+    
+
+.highrscore_select{
+background: #10181F;
+border: 1px solid #141E26;
+-moz-border-radius: .4em;
+-webkit-border-radius: .4em;
+border-radius: .4em;
+
+}
+
+.highrscore_input{}
+
+.highrscore_submit {
+background: #10181F;
+border: 1px solid #141E26;
+-moz-border-radius: .4em;
+-webkit-border-radius: .4em;
+border-radius: .4em;
+padding-left: 7px;
+padding-right: 7px;
+padding-top: 3px;
+padding-bottom: 3px;
+}
+
+.highrscore_table_tr_a {
+    background:#10181F;
+    }
+.highrscore_table_tr_a td {
+    padding:5px;
+    text-align:center;
+    }
+.highrscore_table_tr_a:hover {
+    background:#141E26;
+    }
+.hightscore_mail_icon {
+background: url(../2-0/Gigra-Highscore_mail.png) no-repeat;
+padding-left: 25px;
+}
+
+.hightscore_mail_icon:hover {
+background: url(../2-0/Gigra-Highscore_mail_hover.png) no-repeat;
+padding-left: 25px;
+}
+
+.left
+{
+    float:left;   
+}
+
+/* ROHSTOFFE */
+
+.res_info_box
+{
+    width: 450px;
+    height: 130px;
+    background: #000;
+    margin-top:15px;
+    margin-left: -5px;
+}
+
+.res_bottom {
+color: white;
+width: 135px;
+background: black;
+opacity: 0.7;
+vertical-align: bottom;
+position: relative;
+top: 20px;
+}
+
+.res_bottom_bau {
+position: relative;
+top: 109px;
+left: 3px;
+color: white;
+width: 135px;
+height: 19px;
+opacity: 0.7;
+}
+
+.tleft {
+text-align: left !important;
+background: rgba(0, 0, 0, 0.9);
+min-width: 164px;
+}
+
+.vtop
+{
+    vertical-align:top !important;    
+}
+
+
+.res_btn_reload {
+width: 100px;
+margin: -20px 380px;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* ----------------------------------erfahrung.css--------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.exp_content {
+width: 655px;
+background: #141E26;
+border: 1px solid #12171F;
+padding-top: 10px;
+margin-top: 25px;
+}
+
+/* Attention Box */
+.exp_desc_div {
+width: 655px;
+border: 1px solid #12171F;
+background: rgba(20, 30, 38, 1);
+color: #CCC;
+}
+    
+.exp_desc_ausrufezeichen {
+background: url(../2-0/ausrufezeichen.png) no-repeat; 
+float:left;
+width:92px;
+height:98px;
+}
+.exp_desc_content {
+padding: 10px;
+}
+
+.exp_wrapper a {
+    border:0;
+    }
+
+.exp_desc_btn {
+margin: 0 auto;
+width: 120px;
+position: relative;
+top: 10px;
+}
+
+.exp_level_up_btn {
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 6px;
+padding-right: 6px;
+margin-left: 7px;
+}
+
+.exp_infraname_head {
+padding-top: 3px;
+padding-left: 15px;
+margin-left: 155px;
+width: 485px;
+}
+
+.exp_infracontent {
+padding-left: 200px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.exp_hr {
+background: url(../2-0/exp_hr.png) repeat-x;
+height: 11px;
+border: 0px;
+margin-bottom: 11px;
+opacity: 0.5;
+border-image: initial;
+}
+
+.exp_add {
+background: url(../2-0/add_icon.png) no-repeat;
+height: 21px;
+width:21px;
+border:0px;
+margin-left: 15px;
+opacity:0.4;
+}
+
+.exp_add:hover {
+background: url(../2-0/add_icon.png) no-repeat;
+height: 21px;
+width:21px;
+border:0px;
+margin-left: 15px;
+opacity:1;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ---------------------------------Kampfbericht.css------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+#kampfbericht_table_main {
+border: 1px solid #CCC;
+background: rgba(0, 0, 0, 0.5);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding: 30px;
+text-align: center;
+color: #C2C2C2;
+border-image: initial;
+margin: 10px auto;
+}
+
+.kb_global {
+border: 1px solid #999;
+background: rgba(0, 0, 0, 0.5);
+padding: 10px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border-image: initial;
+}
+
+.kb_runde {
+
+}
+
+.kb_angreifer, .kb_verteidiger {
+border:1px solid #202020;
+display:inline-block;
+}
+
+.kb_angreifer {
+background: rgba(255, 0, 0, 0.1);
+}
+
+.kb_verteidiger {
+background: rgba(25, 52, 63, 0.3);
+}
+
+.kb_erg_text_atter {
+background: rgba(255, 0, 0, 0.1);
+padding: 5px;
+border:1px solid #220000;
+margin-bottom:5px;
+}
+
+.kb_erg_text_deffer {
+background: #0F1F26;
+padding: 5px;
+border:1px solid #19343f;
+
+}
+
+.kb_zwischen_erg {
+float:left;
+}
+
+.kb_erg {
+
+}
+
+.kb_first {
+
+}
+
+.kb_runde, .kb_erg, .kb_first {
+background: black;
+width: 100%;
+margin-bottom: 15px;
+}
+
+.kb_first td {
+font-size: 20px;
+text-align: center;
+}
+
+.angreifer_td_head {
+background: #151515; /* Old browsers */
+background: -moz-linear-gradient(top,  #151515 0%, #13181d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#151515), color-stop(100%,#13181d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #151515 0%,#13181d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #151515 0%,#13181d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #151515 0%,#13181d 100%); /* IE10+ */
+background: linear-gradient(top,  #151515 0%,#13181d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', endColorstr='#13181d',GradientType=0 ); /* IE6-9 */
+text-align: center;
+}
+
+.kb_zeile_a {
+background:#1B1B1B;
+}
+
+.kb_zeile_b {
+background:#0D1014;
+}
+.kb_zeile_b:hover, .kb_zeile_a:hover {
+background: url(../../design/2-0/Gigra-Home_Headline.png) repeat-x;
+color: #619FC8;
+font-size: 15px;
+text-shadow: -1px -1px 0 black;
+font-weight: bold;
+}
+
+.kb_spalte_a, .kb_spalte_b {
+padding:3px;
+text-align:center;
+}
+
+.kb_spalte_a {
+}
+
+.kb_spalte_b{
+}
+
+.kb_erg_text {
+font-weight: bold;
+text-align: center;
+border-bottom: 1px dotted #222;
+padding: 2px;
+}
+
+.kb_erg_text_2 {
+
+}
+
+.kb_erg_text_3 {
+padding-top: 10px;
+font-weight: bold;
+border-bottom: 1px dotted #222;
+padding: 2px;
+padding-top: 20px;
+}
+
+.kb_erg_text_4 {
+padding-top: 10px;
+font-weight: bold;
+border-bottom: 1px dotted #222;
+padding: 2px;
+padding-top: 20px;
+text-align:right;
+}
+
+.kampfbericht_table {
+    
+    }
+
+
+/* -------------------------------------------------------------------------------- */
+/* ----------------------------------spielerinfo.css------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+
+.info_first_head {
+height: 46px;
+background: url('../../design/2-0/Gigra-Galaxie_form_bg.png') no-repeat;
+text-align: center;
+padding-top: 5px;
+color: #619FC8;
+font-weight: bold;
+font-size: 15px;
+}
+
+.info_head {
+background: url(../2-0/infrahead.png) repeat-x;
+height: 22px;
+padding-top: 3px;
+padding-left: 15px;
+font-weight: bold;
+color: #619FC8;
+}
+
+.info_head_th {
+background: url(../2-0/infrahead.png) repeat-x;
+height: 10px;
+padding-top: 3px;
+padding-left: 15px;
+font-weight: bold;
+color: #619FC8;
+}
+
+.info_content {
+background: #1A2128;
+height: 22px;
+padding-top: 3px;
+padding-left: 35px;
+font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* --------------------------------einstellungen.css------------------------------- */
+/* -------------------------------------------------------------------------------- */
+#einstellungen {
+width:100%;
+text-align:left;
+}
+
+#einstellungen tr {
+background:#141E26;
+}
+
+#einstellungen tr:hover {
+background:#1A2128;
+}
+
+#einstellungen tr td{
+padding-left:15px;
+}
+
+.einst_btn_save {
+width: 60px;
+margin: 0 auto;
+}
+
+.blue
+{
+    color:blue;
+}
+.gray
+{
+   color:gray; 
+}
+.red
+{
+    color:red;    
+}
+.green
+{
+    color:lime;   
+}
+.notifybox
+{
+    width:675px;
+    background:#000;
+    color:red;
+    text-align:center;
+    border: 2px red solid;
+}
+.transparent
+{
+   opacity:0.5; 
+}
+.tcenter
+{
+    text-align:center;
+}
+#sc-aks
+{
+    width:300px;   
+}
+.btn_bonus
+{
+    padding:19px;
+    margin: 1px;
+}
+#mouseOverMission
+{
+    width:100%;
+    text-align:center;
+}
+#tutBorder
+{
+    position:absolute;
+    z-index:100;
+    background:transparent;
+    border:2px red solid;
+}
+#tutText
+{
+    position:absolute;
+    z-index:101;
+    max-width:650px;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-color:#151515;   
+}
+
+#gigraChat
+{
+    width:650px;
+    height:350px;
+    text-align:center;
+}
+#chatContainer
+{
+    width:640px;
+    height:300px;
+}
+.chatContent
+{
+    overflow-x: auto;
+    overflow-y: scroll;
+    height:300px;
+    text-align:left;
+}
+.hidden
+{
+    display:none;   
+}
+.clear
+{
+    clear:both;    
+}
+.active
+{
+        outline:none;
+        border:#35a5e5 1px solid;
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        font-family: Arial, Helvetica, Tahoma, Sans-Serif;
+        font-size: 10pt;
+        font-weight: normal;
+    	background: #131C26;
+		background: -moz-linear-gradient(top, rgba(19, 28, 38, 1) 0%, rgba(30, 43, 57, 1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(19, 28, 38, 1)), color-stop(100%,rgba(30, 43, 57, 1)));
+		background: -webkit-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		background: -o-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		background: -ms-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		background: linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c26', endColorstr='#1e2b39',GradientType=0 );
+        opacity:1;
+}
+#tabList li
+{
+    width:100px;
+    float:left;
+    border:1px #000 solid;
+    list-style:none;
+    text-align:center;
+    margin-right:2px;
+    opacity:0.8;
+    margin-top: 10px;
+}
+.tab2 > a
+{
+    color:yellow;   
+}
+
+#chatTextLine {
+width: 570px;
+line-height: 25px;
+height: 25px;
+background: -moz-radial-gradient(50% 46% 90deg,circle closest-corner, #252525, #090909);
+background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#252525), to(#090909));
+background: #111;
+-moz-box-shadow: 0px 0px 4px #000 inset;
+-webkit-box-shadow: 0px 0px 4px #000 inset;
+box-shadow: 0px 0px 4px #000 inset;
+outline: 1px solid #333;
+border: 1px solid black;
+color: #CCC;
+margin-left: -30px;
+border-image: initial;
+}
+
+#chatTextSubmit {
+line-height: 25px;
+height: 25px;
+background: -moz-radial-gradient(50% 46% 90deg,circle closest-corner, #252525, #090909);
+background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#252525), to(#090909));
+background: #111;
+-moz-box-shadow: 0px 0px 4px #000 inset;
+-webkit-box-shadow: 0px 0px 4px #000 inset;
+box-shadow: 0px 0px 4px #000 inset;
+outline: 1px solid #333;
+border: 1px solid black;
+color: #CCC;
+padding-left: 4px;
+padding-right: 4px;
+border-image: initial;
+}
+
+#chatControl {
+margin-top: 7px;
+}
+
+#chatcontent_main {
+    
+    }
+    
+.imp_item_table {
+width:100%;
+text-align:left;
+}
+
+.imp_item_table tr {
+background:#141E26;
+}
+
+.imp_item_table tr:hover {
+background:#1A2128;
+}
+
+.imp_item_table tr td{
+    padding-left:15px;
+    height:21px;
+    width:400px;
+    text-align:center;
+}
+.imp_item_table tr td.planinfo{
+    height:122px;
+    min-width:150px !important;
+}
+.imp_headings
+{
+    position:fixed;
+    width:150px;
+}
+
+input.v3_build_btn {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 8px 15px;
+	background: -moz-linear-gradient(
+		top,
+		#bff01f 0%,
+		#9cc724 50%,
+		#79a100 50%,
+		#79a100);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#bff01f),
+		color-stop(0.50, #9cc724),
+		color-stop(0.50, #79a100),
+		to(#79a100));
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: 1px solid #b9e200;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 15px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 15px rgba(255,255,255,1);
+	text-shadow:
+		0px 0px 0px rgba(000,000,000,0),
+		0px 1px 0px rgba(255,255,255,1);
+}
+input.v3_build_btn:hover 
+{
+    -moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 30px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 30px rgba(255,255,255,1);    
+}
+
+input.v3_build_inactive {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity:0.5;
+	font-size: 12px;
+	color: #e8e5e8;
+	padding: 8px 15px;
+	background: -moz-linear-gradient(
+		top,
+		#e2e3df 0%,
+		#c0c2b8 50%,
+		#9d9e98 50%,
+		#9fa199);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#e2e3df),
+		color-stop(0.50, #c0c2b8),
+		color-stop(0.50, #9d9e98),
+		to(#9fa199));
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: 1px solid #83857c;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 16px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 16px rgba(255,255,255,1);
+	text-shadow:
+		0px 0px 0px rgba(000,000,000,0),
+		0px 1px 0px rgba(255,255,255,1);
+}
+input.v3_cancel_btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+	color: #ffffff;
+	padding: 8px 30px;
+	background: -moz-linear-gradient(
+		top,
+		#f01f1f 0%,
+		#c72525 50%,
+		#a10015 50%,
+		#a1000d);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#f01f1f),
+		color-stop(0.50, #c72525),
+		color-stop(0.50, #a10015),
+		to(#a1000d));
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #d45d5d;
+    -moz-box-shadow:
+    	0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 15px rgba(250,223,223,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 15px rgba(250,223,223,1);
+	text-shadow:
+		0px 0px 0px rgba(000,000,000,1),
+		0px 1px 0px rgba(255,255,255,1);
+        
+        
+}
+input.v3_cancel_btn:hover {
+
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 18px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 18px rgba(255,255,255,1);
+}
+
+
+.bau_info_part {
+background: transparent url(../2-0/bauinfoBox_bg.png) no-repeat;/*v3_f_back.png*/
+width: 315px;
+height: 631px;
+float: left;
+padding-top: 5px;
+
+}
+.bau_info_part_table {
+width: 300px;
+text-align: left;
+margin: 0 auto;
+}
+
+.bau_info_part_table tr {
+background: rgba(0, 0, 0, 0.9);
+}
+
+.bau_info_part_table tr td {
+padding:10px;  
+border:1px solid #757575;
+}
+
+.v3Info_neu {
+    
+    }
+
+
+.msg_tabs li
+{
+    list-style:none;
+    height:25px;
+    text-align:left;
+    background:#141E26;
+    padding: 0 3px;
+    margin: 1px 0;
+}
+.msg_tabs li:hover
+{
+    background:#1A2128;
+}
+
+
+.msg_item_table {
+text-align:left;
+}
+
+.msg_item_table tr {
+background:#141E26;
+}
+
+.msg_item_table tr:hover {
+background:#1A2128;
+}
+
+.msg_item_table tr td{
+    padding-left:15px;
+    height:21px;
+    width:400px;
+    text-align:center;
+}
+.msg_item_table tr td.planinfo{
+    height:122px;
+    min-width:150px !important;
+}
+
+.show_info_table {
+    width:100%;
+    }
+.show_info_table tr td{
+
+    height:21px;
+    width:400px;
+    text-align:center;
+}
+
+.show_info_table tr {
+background:#141E26;
+}
+
+.show_info_table tr:hover {
+background:#1A2128;
+}
+
+#v3_infoBox_image {
+background: url(../2-0/Gigra-Bauuebersicht_BG_v3_big.png) no-repeat;
+z-index: 100;
+position: absolute;
+height: 175px;
+width: 175px;
+left: 692px;
+top: 665px;
+}
+
+.ally_page_btn {
+background: url(../2-0/Gigra-Allianz_Page_BG.png) no-repeat;
+height: 32px;
+padding-top: 8px;
+margin-top: -8px;
+}
+
+#ally-info {
+
+}
+
+#ally_content {
+padding: 10px;
+background: #101010;
+width: 574px;
+margin: -13px auto;
+border: 1px solid black;
+margin-bottom: 15px;
+}
+
+#ally_beschreibung {
+display: block;
+width: 595px;
+margin: -12px auto;
+}

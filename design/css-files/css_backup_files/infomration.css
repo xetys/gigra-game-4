@@ -1,0 +1,41 @@
+.info, .success, .warning, .error, .validation, .hidden_error {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+	background-color:#151515;
+	
+
+border: 6px;
+text-shadow: 0 2px 0 black;
+-moz-border-image: url(".../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+-webkit-border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+}
+.info {
+    color: #00529B;
+    background-image: url('../2-0/info.png');
+}
+.success {
+    color: #4F8A10;
+    background-image:url('../2-0/success.png');
+}
+.warning {
+    color: #9F6000;
+    background-image: url('../2-0/warning.png');
+}
+.error, .hidden_error{
+    color: #D8000C;
+    background-image: url('../2-0/error.png');
+}
+
+/*
+<div class="info">Info message</div>
+
+<div class="success">Successful operation message</div>
+
+<div class="warning">Warning message</div>
+
+<div class="error">Error message</div>
+*/

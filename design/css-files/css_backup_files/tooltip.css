@@ -1,0 +1,51 @@
+div > .tooltip, li > .tooltip, a > .tooltip, div > .tooltip {
+    opacity: 0;
+    margin-top: -10px;
+	visibility: hidden;
+	margin-left: -65px;
+
+
+}
+
+	div:hover > .tooltip, li:hover > .tooltip, a:hover > .tooltip, div:hover > .tooltip,
+	a .tooltip:hover, div .tooltip:hover, li .tooltip:hover, div .tooltip:hover {
+		opacity: 1;
+		visibility: visible;
+		overflow: visible;
+		margin-top: 30px;
+		display: inline;
+		margin-left: 10px;
+        margin-top:-20px;
+		
+	
+	}
+
+.tooltip {
+	padding: 10px;
+	margin-left: -40px;
+
+	position: absolute;
+
+	font-family: Arial;
+	font-size: 12px;
+	text-decoration: none;
+	font-style: normal;
+	color: #999;
+	
+
+    background: #0D1014;
+    border: 6px;
+    -moz-border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+    -webkit-border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+    border-image: url(".../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    min-height: 135px;
+    min-width:250px;
+    max-height:250px;
+    overflow:auto;
+
+	z-index: 10;	
+}
+
+		.tooltip div { }

@@ -1,0 +1,63 @@
+/* ----------------------------------------------- Classes -----------------------------------------*/
+
+.class_btn {
+background-color: rgba(50, 50, 50, 0.9);
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.9) 0%), to(rgba(30, 30, 30, 0.9) 50%));
+background-image: -webkit-linear-gradient(top, rgba(50, 50, 50, 0.9) 0%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%);
+background-image: -moz-linear-gradient(top, rgba(50, 50, 50, 0.9) 0%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%);
+background-image: -ms-linear-gradient(top, rgba(50, 50, 50, 0.9) 0%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%);
+background-image: -o-linear-gradient(top, rgba(50, 50, 50, 0.9) 0%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%);
+background-image: linear-gradient(top, rgba(50, 50, 50, 0.9) 0%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%);
+border: 0;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: inset 1px 1px 1px 0px rgba(135, 135, 135, 0.1), inset -1px -1px 1px 0px rgba(135, 135, 135, 0.1);
+-moz-box-shadow: inset 1px 1px 1px 0px rgba(135, 135, 135, 0.1), inset -1px -1px 1px 0px rgba(135, 135, 135, 0.1);
+-ms-box-shadow: inset 1px 1px 1px 0px rgba(135, 135, 135, 0.1), inset -1px -1px 1px 0px rgba(135, 135, 135, 0.1);
+-o-box-shadow: inset 1px 1px 1px 0px rgba(135, 135, 135, 0.1), inset -1px -1px 1px 0px rgba(135, 135, 135, 0.1);
+box-shadow: inset 1px 1px 1px 0px rgba(135, 135, 135, 0.1), inset -1px -1px 1px 0px rgba(135, 135, 135, 0.1);
+color: white;
+line-height: 1;
+text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8), 0 1px 1px rgba(255, 255, 255, 0.3);
+
+padding:5px;
+}
+
+.class_btn.inactive
+{
+    opacity:0.2;
+    cursor:default;
+}
+.class_btn:hover {
+color: #619FC8;
+}
+
+.class_small_header {
+background: url(../2-0/infrahead.png) repeat-x;
+height: 22px;
+font-weight: bold;
+color: #619FC8;
+}
+
+.class_small_content {
+background: #1A2128;
+}
+
+.class_content_wrapper {
+width: 660px;
+margin: 0 auto;
+border: 1px solid black;
+border-image: initial;
+}
+
+.class_hr {
+background: url(../2-0/exp_hr.png) repeat-x;
+height: 11px;
+border: 0px;
+}
+
+
+

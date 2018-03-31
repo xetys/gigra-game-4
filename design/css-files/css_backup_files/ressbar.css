@@ -1,0 +1,148 @@
+#ressbar {
+/*
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px;
+-webkit-border-radius: 0px 0px 10px 10px;
+border-radius: 0px 0px 10px 10px;
+border: 4px solid #131820;
+-webkit-box-shadow: 0px 3px 10px #26628f;
+-moz-box-shadow: 0px 3px 50px #26628f;
+box-shadow: 0px 3px 10px #26628f; 
+*/
+position: fixed;
+top: 0px;
+}
+
+#headimage {
+position: fixed;
+top: 0px;
+margin-left: 255px;
+}
+    
+    }
+
+#ressbartable {
+    margin-bottom: -67px;
+}
+
+	
+#ressbartable .rowa {
+height: 20px;
+color: #999;
+/* background: url(../2-0/Gigra-Home_Headline.png) repeat-x; */
+}
+#ressbartable .rowb {
+
+}
+#ressbartable .cell {
+text-align: center;
+padding-right: 37px;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+/* Mail Icon - Anfang  */
+.mail_icon {
+background: url(../2-0/Gigra-Mail-Icon.png) no-repeat;
+position: relative;
+top: 5px;
+padding-right: 25px;
+padding-top: 19px;
+padding-left: 22px;
+left: 14px;
+}
+
+.mail_icon:hover {
+background: url(../2-0/Gigra-Mail-Icon_hover.png) no-repeat;
+position: relative;
+top: 5px;
+padding-right: 25px;
+padding-top: 19px;
+padding-left: 22px;
+left: 14px;
+}
+
+/* Mail Icon - Ende  */
+
+
+
+.sub_msg_fl {
+font-size: 12px;
+position: absolute;
+margin-top: -23px;
+margin-left: 36px;
+color: red;
+}
+
+.sub_msg {
+font-size: 12px;
+position: absolute;
+margin-top: -23px;
+margin-left: 36px;
+color: #999;
+}
+
+#ressbartable .coll8 {
+padding: 2px;
+text-align: center;
+}
+
+.resbar-td-icon_1 {
+min-height:32px;
+min-width:32px;
+background:url(../2-0/Gigra-Mail-Icon.png) no-repeat;
+
+}
+
+.resbar-td-icon_2{
+min-height:32px;
+min-width:32px;
+background:url(../2-0/Gigra-Man-Icon.png) no-repeat;
+}
+
+
+
+
+
+
+.ressbar_table_img_bg {
+margin: 0 auto;
+}
+
+.ressbar_table_img_bg_a {
+background:url(../2-0/ressbar_tabelle_bg_a.png) no-repeat;
+height:56px;
+min-height:56px;
+max-height:56px;
+width:31px;
+min-width:31px;
+max-width:31px;
+padding:0px;
+margin:0px;
+border:0px;
+}
+
+.ressbar_table_img_bg_b {
+background:url(../2-0/ressbar_tabelle_bg_b.png) repeat-x;
+height:56px;
+min-height:56px;
+max-height:56px;
+padding:0px;
+margin:0px;
+border:0px;
+}
+
+.ressbar_table_img_bg_c {
+background:url(../2-0/ressbar_tabelle_bg_c.png) no-repeat;
+height:56px;
+min-height:56px;
+max-height:56px;
+width:63px;
+min-width:63px;
+max-width:63px;
+padding:0px;
+margin:0px;
+border:0px;
+}

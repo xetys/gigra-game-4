@@ -1,0 +1,15 @@
+/* --- Übersicht Box --- */
+#BuildOver-Box {
+background: url('../../design/2-0/Gigra-Div-Uebersicht-BG.png');
+position: fixed;
+margin-left: -142px;
+width: 265px;
+height: 182px;
+padding-left: 85px;
+padding-top: 8px;
+}
+
+.BuildOver-Box_Table {
+padding-top: 15px;
+margin-left: -5px;
+}

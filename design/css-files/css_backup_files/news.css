@@ -1,0 +1,28 @@
+.news-wrapper {
+margin-top: -25px;
+padding: 10px;
+
+}
+
+.news-head {
+background: url(../2-0/Gigra-News-Header.png) repeat-x;
+height: 34px;
+padding-top: 8px;
+padding-left: 15px;
+font-weight: bold;
+}
+
+.news-content {
+background: #151515;
+margin-top: -8px;
+padding: 10px;
+}
+
+.news-time, .news-archiv {
+text-align: right;
+padding-top: 18px;
+}
+
+.news-text {
+
+}

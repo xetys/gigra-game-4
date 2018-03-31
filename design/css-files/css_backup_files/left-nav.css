@@ -1,0 +1,136 @@
+#navigationMenu {
+position: fixed;
+top: 290px;
+margin-left: 176px;
+}
+
+
+#navigationMenu li{
+    list-style:none;
+	height:34px;
+	width:34px;
+}
+
+#navigationMenu span{
+	width:0;
+	right:38px;
+	padding:0;
+	position:absolute;
+	overflow:hidden;
+
+
+font-family: Arial, Helvetica, Tahoma, Sans-Serif;
+font-size: 10pt;
+font-weight: normal;
+	letter-spacing:0.6px;
+	white-space:nowrap;
+	line-height:39px;
+	
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	transition: 0.25s;
+}
+
+#navigationMenu a{
+	background:url('../../design/2-0/icons/Gigra-Navigation.png') no-repeat;
+	height:34px;
+	width:34px;
+	display:block;
+	position:relative;
+}
+
+/* General hover styles */
+
+#navigationMenu a:hover span { 
+width:108px; 
+padding:0 20px;
+overflow:visible;
+background: url("../../design/2-0/Gigra-Button_Left-Nav_2.png") no-repeat;
+}
+#navigationMenu a:hover{
+
+}
+
+/* Bauübersicht */
+
+#navigationMenu .bau {	background-position:0 0;}
+#navigationMenu .bau:hover {background-position:0 -34px;}
+#navigationMenu .bau span{ }
+
+/* Rohstoffe */
+
+#navigationMenu .ress { background-position:-34px 0;}
+#navigationMenu .ress:hover {background-position:-34px -34px;}
+#navigationMenu .ress span{ }
+
+/* Galaxie */
+
+#navigationMenu .galaxie { background-position:-68px 0;}
+#navigationMenu .galaxie:hover { background-position:-68px -34px;}
+#navigationMenu .galaxie span{ }
+
+/* Highscore */
+
+#navigationMenu .highscore { background-position:-102px 0;}
+#navigationMenu .highscore:hover { background-position:-102px -34px;}
+#navigationMenu .highscore span{}
+
+/* Technik */
+
+#navigationMenu .technik { background-position:-136px 0;}
+#navigationMenu .technik:hover { background-position:-136px -34px;}
+#navigationMenu .technik span{}
+
+/* Erfahrung */
+
+#navigationMenu .erfahrung { background-position:-170px 0;}
+#navigationMenu .erfahrung:hover { background-position:-170px -34px;}
+#navigationMenu .erfahrung span{}
+
+/* Informationen */
+
+#navigationMenu .informationen { background-position:-204px 0;}
+#navigationMenu .informationen:hover { background-position:-204px -34px;}
+#navigationMenu .informationen span{}
+
+/* Allianz */
+
+#navigationMenu .allianz { background-position:-238px 0;}
+#navigationMenu .allianz:hover { background-position:-238px -34px;}
+#navigationMenu .allianz span{}
+
+/* Forum */
+
+#navigationMenu .forum { background-position:-272px 0;}
+#navigationMenu .forum:hover { background-position:-272px -34px;}
+#navigationMenu .forum span{}
+
+/* Serverstatus */
+
+#navigationMenu .serverstatus { background-position:-306px 0;}
+#navigationMenu .serverstatus:hover { background-position:-306px -34px;}
+#navigationMenu .serverstatus span{}
+
+/* Einstellungen */
+
+#navigationMenu .einstellungen { background-position:-340px 0;}
+#navigationMenu .einstellungen:hover { background-position:-340px -34px;}
+#navigationMenu .einstellungen span{}
+
+/* Kampfsimulator */
+
+#navigationMenu .kampfsimulator { background-position:-374px 0;}
+#navigationMenu .kampfsimulator:hover { background-position:-374px -34px;}
+#navigationMenu .kampfsimulator span{}
+
+/* Ausloggen */
+
+#navigationMenu .ausloggen { background-position:-408px 0;}
+#navigationMenu .ausloggen:hover { background-position:-408px -34px;}
+#navigationMenu .ausloggen span{}
+
+
+
+
+
+

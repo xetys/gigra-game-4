@@ -1,0 +1,75 @@
+#galaxy-container {
+width: 650px;
+}
+    
+#galaxie_tabele {
+width: 100%;
+background:url('../../design/2-0/Gigra-Galaxie_bg.png');
+}
+
+#galaxie_tabele td {
+border:1px solid #1A1F24;
+}
+
+#galaxie_tabele tr {
+border:1px solid #1A1F24;
+}
+
+
+.galaxie_planibox_verlassen_a {
+
+}
+
+.galaxie_planibox_verlassen_img {
+position: relative;
+top: 0px;
+}
+
+.galaxie_planibox_verlassen_span {
+position: relative;
+top: -22px;
+}
+
+.galaxie_tr {
+background:rgba(0,0,0,0.5);
+opacity:0.8;
+    
+    }
+    
+.galaxie_tr:hover {
+background:rgba(0,0,0,0); 
+opacity:1;
+    }
+    
+.galaxie_tr_player {
+background:rgba(0,0,0,0.2);
+opacity:0.8;
+  
+    }
+    
+.galaxie_tr_player:hover {
+background:rgba(0,0,0,0);
+opacity:1;
+ 
+    }
+    
+.galaxie_td {
+text-align:center;   
+}
+
+
+.Galaxie_form {
+height: 46px;
+background: url('../../design/2-0/Gigra-Galaxie_form_bg.png') no-repeat;
+padding-left: 105px;
+}
+
+
+.tooltip_h1_span {
+color: #6F9FC8;
+font-size: 11px;
+font-weight: 700;
+height:27px;
+text-align: left;
+}
+

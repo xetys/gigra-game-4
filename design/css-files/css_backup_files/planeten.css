@@ -1,0 +1,36 @@
+#planeten-box {
+width: 640px;
+height: 128px;
+overflow: hidden;
+}
+.planet-slide li
+{
+    float:left;
+    list-style:none;
+    text-align:center;
+}
+.planet-slide li a img
+{
+    width:85px;    
+    height:85px;
+}
+/*
+.planet-slide li.planet-active a img
+{
+    width:80px;    
+    height:80px;
+}*/
+    			
+		.planeten_list {
+			padding:10px;
+		}
+.planet-overlay
+{
+    position:relative;
+    width: 85px;
+    height: auto;
+    overflow:hidden;
+    top:-80px;
+    background:transparent;
+    text-align:left;
+}

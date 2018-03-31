@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f ../docker/docker-compose.yaml
+    kompose.version: 1.11.0 (39ad614)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: gigra
+  name: gigra
+spec:
+  ports:
+  - name: "80"
+    port: 80
+    targetPort: 80
+  selector:
+    io.kompose.service: gigra
+  type: NodePort
+status:
+  loadBalancer: {}

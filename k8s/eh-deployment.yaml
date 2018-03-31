@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f ../docker/docker-compose.yaml
+    kompose.version: 1.11.0 (39ad614)
+  labels:
+    io.kompose.service: eh
+  name: eh
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: eh
+    spec:
+      containers:
+      - args:
+        - /var/www/html/run-eh.sh
+        image: xetys/gigra-refact:1.0
+        name: gigra-eh
+        volumeMounts:
+        - name: config
+          mountPath: /var/www/html/core/configs/config.php
+          subPath: config.php
+      restartPolicy: Always
+      volumes:
+      - name: config
+        configMap:
+          name: gigra-config
+status: {}

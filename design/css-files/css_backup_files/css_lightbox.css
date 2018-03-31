@@ -1,0 +1,39 @@
+.black_overlay{
+    		display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index:1001;
+			-moz-opacity: 0.8;
+			opacity:.80;
+			filter: alpha(opacity=80);
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+		}
+.white_content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -16%;
+    width: 690px;
+    height: 590px;
+    padding: 16px;
+    z-index: 1002;
+    overflow: auto;
+    background: #0D1014;
+    border: 6px;
+    border-top: none;
+    -moz-border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+    -webkit-border-image: url("../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+    border-image: url(".../2-0/Gigra-Home_Border_img_left.png") 100 reapeat-y;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    min-height: 135px;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}

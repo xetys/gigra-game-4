@@ -1,0 +1,169 @@
+/*    																							*/
+/* -----------------------------------------  Navigation - Links - - Anfang --------------------*/
+/*																								*/
+
+#left-nav { }
+
+ul#left-nav {
+position: fixed;
+top: 284px;
+margin-left: 10px;
+}
+
+  * html ul#left-nav {  /* Korrekturen f�r IE 5.x */
+
+    width: 11.6em;
+	w\idth: 10em;
+	padding-left: 0;
+	padd\ing-left: 0.8em;
+
+  }
+
+ul#left-nav li {
+list-style: none;
+margin: 0.4em;
+padding: 0;
+height: 32px;
+width: 148px;
+}
+
+
+ul#left-nav a {
+display: block;
+text-decoration: none;
+font-weight: bold;
+background: url("../../design/2-0/Gigra-Button_Left-Nav.png") no-repeat;
+height: 36px;
+width: 104px;
+padding-left: 44px;
+padding-top: 12px;
+}
+
+  * html ul#left-nav a {  /* Breitenangaben nur fuer IE */
+
+    width: 100%;
+
+    w\idth: 8.8em;
+
+  }
+
+  ul#left-nav a:hover {
+
+	background: url("../../design/2-0/Gigra-Button_Left-Nav_Hover.png") no-repeat;
+}
+
+
+/*																								*/
+/* -----------------------------------------  Navigation - Links - - Ende  ---------------------*/
+/*																								*/
+
+#left-nav_icon {
+position: fixed;
+list-style: none;
+top: 290px;
+margin-left: 166px;
+height: 35px;
+width: 35px;
+}
+
+
+/* Die Icons */
+
+.left-nav_icon_img_bauen {
+background: url("../../design/2-0/icons/uebersicht.png") no-repeat;
+
+}
+
+.left-nav_icon_img_ress  {
+background: url("../../design/2-0/icons/ressourcen.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_galaxie  {
+background: url("../../design/2-0/icons/galaxy.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_flotte  {
+background: url("../../design/2-0/icons/uebersicht.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_highscore  {
+background: url("../../design/2-0/icons/highscore.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_technik  {
+background: url("../../design/2-0/icons/techtree.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_erfahrung  {
+background: url("../../design/2-0/icons/xp.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_planeten  {
+background: url("../../design/2-0/icons/uebersicht.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_playerinfo  {
+background: url("../../design/2-0/icons/informationen.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_allianzen  {
+background: url("../../design/2-0/icons/allianz.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_forum  {
+background: url("../../design/2-0/icons/forum.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_status  {
+background: url("../../design/2-0/icons/server_status.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_einstellungen  {
+background: url("../../design/2-0/icons/einstellungen.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_kampfsim  {
+background: url("../../design/2-0/icons/uebersicht.png") no-repeat;
+
+}
+
+
+.left-nav_icon_img_logout  {
+background: url("../../design/2-0/icons/logout.png") no-repeat;
+
+}
+
+
+/* together */
+.img_incons_nav {
+padding-right: 36px;
+padding-bottom: 34px;
+}
+
+
+
+

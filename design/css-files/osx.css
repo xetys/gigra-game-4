@@ -1,0 +1,76 @@
+/*
+ * SimpleModal OSX Style Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: osx.css 254 2010-07-23 05:14:44Z emartin24 $
+ */
+
+#osx-modal-content, #osx-modal-data {display:none;}
+
+/* Overlay */
+#osx-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#osx-container {
+        background-color: #0D1014;
+    border: 2px solid black;
+    color: #6F9FC8;
+    font: 16px/24px "Lucida Grande",Arial,sans-serif; 
+    padding-bottom:4px; 
+    width:600px; 
+    -moz-border-radius-bottomleft:6px; 
+    -webkit-border-bottom-left-radius:6px; 
+    -moz-border-radius-bottomright:6px; 
+    -webkit-border-bottom-right-radius:6px; 
+    border-radius:0 0 6px 6px; 
+    -moz-box-shadow:0 0 64px #000; 
+    -webkit-box-shadow:0 0 64px #000; 
+    box-shadow:0 0 64px #000;
+    }
+#osx-container a {color:#ddd;}
+#osx-container #osx-modal-title {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    padding: 0 25px;
+    background: url(../../design/2-0/Gigra-Home_Headline.png) repeat-x;
+    color: #619FC8 !important;
+    font-size: 15px;
+    height: 27px;
+    line-height: 27px;
+}
+#osx-container .close {
+display: none;
+position: absolute;
+right: 0;
+top: -5px;
+}
+#osx-container .close a {display:block; color:#777; font-weight:bold; padding:6px 12px 0; text-decoration:none; text-shadow:0 1px 0 #f4f4f4;}
+#osx-container .close a:hover {color:#000;}
+#osx-container #osx-modal-data {
+font-size: 12px;
+padding: 6px 12px;
+color: #6F9FC8;
+height: 455px;
+overflow: auto;
+}
+#osx-container h2 {margin:10px 0 6px;}
+#osx-container p {margin-bottom:10px;}
+#osx-container span {color:#777;}
+
+#osx-modal-footer {
+    background: #0F181F;
+    width: 96%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    height: 25px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-image: initial;
+}

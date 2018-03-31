@@ -1,0 +1,82 @@
+/* --- Info Box --- */
+
+#divInfo {
+padding: 15px;
+
+}
+
+/*
+#buildInfo-box {
+background: #0D1014;
+border: 5px;
+text-shadow: 0 2px 0 black;
+color: #868686;
+-webkit-box-shadow: inset 0px 0px 1px 5px #131820;
+-moz-box-shadow: inset 0px 0px 1px 5px #131820;
+box-shadow: inset 0px 0px 1px 5px #131820;
+background: -moz-linear-gradient(top, rgba(19, 28, 38, 1) 0%, rgba(30, 43, 57, 1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(19, 28, 38, 1)), color-stop(100%,rgba(30, 43, 57, 1)));
+background: -webkit-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: -o-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: -ms-linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+background: linear-gradient(top, rgba(19, 28, 38, 1) 0%,rgba(30, 43, 57, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c26', endColorstr='#1e2b39',GradientType=0 );
+width: 300px;
+position: fixed;
+margin-left: 890px;
+margin-top: 195px;
+}
+*/
+
+
+#buildInfo-box {
+text-shadow: 0 2px 0 black;
+color: #868686;
+width: 310px;
+position: fixed;
+margin-left: 890px;
+margin-top: 395px;
+background: url(http://refact.gigra.stytex.de/design/2-0/Gigra-Build_Div-box.png);
+height: 175px;
+}
+
+.DivInfoContent_img {
+text-align: center;
+}
+
+.DivInfoContent_ress {
+text-align: center;
+font-weight: bold;
+padding: 5px;
+}
+
+.DivInfoContent_cancel {
+text-align: center;
+padding: 6px;
+color: white;
+background: -moz-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%, rgba(69, 72, 77, 0.5) 1%, rgba(0, 0, 0, 0.6) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69, 72, 77, 0.5)), color-stop(1%,rgba(69, 72, 77, 0.5)), color-stop(100%,rgba(0, 0, 0, 0.6)));
+background: -webkit-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -o-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: -ms-linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+background: linear-gradient(top, rgba(69, 72, 77, 0.5) 0%,rgba(69, 72, 77, 0.5) 1%,rgba(0, 0, 0, 0.6) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8045484d', endColorstr='#99000000',GradientType=0 );
+padding: 6px;
+border-top: 1px solid #0196E3;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+-webkit-transition-property: -webkit-box-shadow, background;
+-webkit-transition-duration: 0.25s;
+-moz-box-shadow: 0px 0px 2px #000;
+-webkit-box-shadow: 0px 0px 2px #000;
+}
+
+.DivInfoContent a {
+text-align:right;
+}
+
+.DivInfoContent {
+width: 268px;
+margin-left: -1px;
+}

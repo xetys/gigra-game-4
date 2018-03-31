@@ -1,0 +1,48 @@
+#nachrichten_wrapper {
+width: 650px;
+border: 1px solid #131820;
+margin-top: 5px;
+}
+
+.mgstext {
+background:rgba(0,0,0,0.5);
+}
+
+.msgs {
+
+}
+
+.msg_head {
+/* background: url(../2-0/GigraMail-Header.png) no-repeat;
+height: 33px;
+padding-left: 40px; */
+
+background: #112229;
+background: -moz-linear-gradient(top, rgba(17, 34, 41, 1) 0%, rgba(9, 18, 25, 1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(17, 34, 41, 1)), color-stop(100%,rgba(9, 18, 25, 1)));
+background: -webkit-linear-gradient(top, rgba(17, 34, 41, 1) 0%,rgba(9, 18, 25, 1) 100%);
+background: -o-linear-gradient(top, rgba(17, 34, 41, 1) 0%,rgba(9, 18, 25, 1) 100%);
+background: -ms-linear-gradient(top, rgba(17, 34, 41, 1) 0%,rgba(9, 18, 25, 1) 100%);
+background: linear-gradient(top, rgba(17, 34, 41, 1) 0%,rgba(9, 18, 25, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#112229', endColorstr='#091219',GradientType=0 );
+height: 26px;
+
+
+}
+
+.msg_content {
+padding:20px;
+background:#151515;
+color:#868686;
+}
+
+.msg_replay {
+padding-top:5px;
+float:right;
+}
+
+.msg_subject {
+float: right;
+padding-right: 140px;
+padding-top: 3px;
+}

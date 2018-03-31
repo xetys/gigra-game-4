@@ -1,0 +1,28 @@
+version: '2'
+services:
+  mysql:
+    container_name: db
+    image: mysql:5.5
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=gigra
+    command: mysqld --lower_case_table_names=1 --skip-ssl
+    volumes:
+      - ./db/:/docker-entrypoint-initdb.d
+
+  eh:
+    container_name: gigra-eh
+    image: xetys/gigra-refact
+    command: /var/www/html/run-eh.sh
+    depends_on:
+      - mysql
+
+  gigra:
+    container_name: gigra-srv
+    image: xetys/gigra-refact
+    ports:
+      - 80:80
+    depends_on:
+      - mysql
+

@@ -1,0 +1,63 @@
+ul#Top-Nav {
+}
+
+  ul#Top-Nav li {
+	list-style: none;
+	display: inline;
+	margin: 0.4em; padding: 0;
+}
+
+
+
+  ul#Top-Nav a, ul#Top-Nav span {
+
+display: inline;
+text-decoration: none;
+float: left;
+padding: 10px;
+background: url(../2-0/Gigra-Button_Tab.png);
+color: white;
+margin: -11px -1px 0px 0px;
+width: 109px;
+height: 25px;
+text-align: center;
+padding-top: 14px;
+font-weight:bold;
+
+  }
+
+  * html ul#Top-Nav a, * html ul#Top-Nav span {
+
+    width: 1em;    /* nur fuer IE 5.0x erforderlich */
+
+    w/idth: auto;  /* sicherheitshalber fuer IE 6 zurueckgesetzt */
+
+  }
+
+  ul#Top-Nav a:hover, ul#Top-Nav span {
+color:#48B;
+
+  }
+
+
+
+#Top-Nav li.inactive
+{
+display: inline;
+text-decoration: none;
+float: left;
+padding: 10px;
+background: url(../2-0/Gigra-Button_Tab.png);
+color: white;
+margin: -11px -1px 0px 0px;
+width: 109px;
+height: 25px;
+text-align: center;
+padding-top: 14px;
+font-weight:bold;
+    opacity:0.3;   
+}
+
+table #Top-Nav {
+
+}
