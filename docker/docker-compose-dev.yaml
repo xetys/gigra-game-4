@@ -1,0 +1,53 @@
+version: '2'
+services:
+#  nginx:
+#    container_name: nginx
+#    image: nginx:latest
+#    ports:
+#      - 80:80
+#    volumes:
+#      - ./default.conf:/etc/nginx/conf.d/default.conf
+#      - ../:/www
+#    depends_on:
+#      - gigra
+
+  mysql:
+    container_name: mysql
+    image: mysql:5.5
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=gigra
+    command: mysqld --lower_case_table_names=1 --skip-ssl
+    volumes:
+      - ./db/:/docker-entrypoint-initdb.d
+
+  eh:
+    container_name: gigra-eh
+    build: ../
+    command: /var/www/html/run-eh.sh
+    volumes:
+      - ../:/var/www/html
+    depends_on:
+      - mysql
+
+  gigra:
+    container_name: gigra-srv
+    build: ../
+    ports:
+      - 80:80
+    volumes:
+      - ../:/var/www/html
+    depends_on:
+      - mysql
+
+  phpmyadmin:
+    container_name: ktix-phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    environment:
+     - PMA_HOST=mysql
+    ports:
+     - 1090:80
+    depends_on:
+      - mysql
+
