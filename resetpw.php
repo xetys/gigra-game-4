@@ -31,7 +31,7 @@ else
 {
   $lodb = gigraDB::db_open();
   
-  $mail = mysql_escape_string($_POST['mail']);
+  $mail = $lodb->escape($_POST['mail']);
   $lodb->query("SELECT name,pw,email FROM users WHERE email='$mail'");
   
   if($lodb->numrows() == 0) {

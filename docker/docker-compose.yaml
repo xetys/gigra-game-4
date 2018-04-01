@@ -1,5 +1,9 @@
 version: '2'
 services:
+  sendmail:
+    image: namshi/smtp
+    environment:
+      - MAILNAME=gigra-game.de
   mysql:
     container_name: db
     image: mysql:5.5

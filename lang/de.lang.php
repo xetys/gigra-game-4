@@ -90,7 +90,7 @@ $_LANG = array(
 	"regmail_text" => "Hallo %s,<br />vielen Dank fuer Ihre Anmeldung bei %s. Ihr Account wird erst dann aktiviert, sobald Sie Ihr Passwort &auml;ndern!<br /><br />Ihr Benutzername lautet: %s<br />Ihr Passwort lautet: %s<br /><br />Sie k&ouml;nnen sich unter folgendem Link einloggen:<br />%s/login.php <br />Viel Spa&szlig; w&uuml;nscht Ihnen,<br />das Gigra Team",
 	"reg_welcome_gigra" => "Willkommen bei Gigra!",
 	"reg_welcome_text" => "Es freut uns, Sie als neuen Spieler bei uns willkommen hei&szlig;en zu k&ouml;nnen. Ihr Passwort wurde generiert und an Ihre E-Mail Adresse versendet.<br>Wir empfehlen Ihnen es direkt nach Ihrem ersten Login zu wechseln.<br>",
-    "reg_not_activated" => "Sie m&uuml;ssen Ihren Account noch aktivieren. Ihr Account wird automatisch aktiviert, sobald Sie Ihr Passwort bei <a href='einst.php'>Einstellungen</a> &auml;ndern. Dazu ben&ouml;tigen Sie Ihr Initialpasswort, welches Ihnen zugesendet wurde",
+    "reg_not_activated" => "Sie m&uuml;ssen Ihren Account noch aktivieren. Ihr Account wird automatisch aktiviert, sobald Sie Ihr Passwort bei <a href='einst.php'>Einstellungen</a> &auml;ndern. Dazu ben&ouml;tigen Sie Ihr Initialpasswort, welches Ihnen zugesendet wurde. &Uuml;berpr&uuml;fen Sie auch den SPAM Ordner.",
 
 	//navi
 	"nav_build_ov" => "Bau&uuml;bersicht",

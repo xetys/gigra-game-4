@@ -1,5 +1,6 @@
 tmp
 .idea
 chat/gigraChatServer/*.json
+core/eh/log
 
 core/c_combat/battledata/*

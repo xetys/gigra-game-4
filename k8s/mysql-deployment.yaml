@@ -40,4 +40,4 @@ spec:
       volumes:
       - name: mysql-claim0
         persistentVolumeClaim:
-          claimName: mysql-claim0
+          claimName: mysql-claim1

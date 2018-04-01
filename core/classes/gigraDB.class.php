@@ -39,11 +39,12 @@ class gigraDB
         if(!defined("HANDLER_MODE"))
 	        $this->con = mysqli_connect($cfg[0],$cfg[1],$cfg[2]);
         else
-            $this->con = mysqli_connect("p:".$cfg[0],$cfg[1],$cfg[2]);
+            $this->con = mysqli_connect($cfg[0],$cfg[1],$cfg[2]);
+//            $this->con = mysqli_connect("p:".$cfg[0],$cfg[1],$cfg[2]);
         
 	    if(!$this->con)
 	    {
-            if(!defined("HANDLER_MODE"))
+            if(!defined("HANDLER_MODE") || !isset($_GET['show_db_error']))
                 redirect("/dberror.php");
             else
 	    	    die("Connect Error: ".mysqli_connect_error());
