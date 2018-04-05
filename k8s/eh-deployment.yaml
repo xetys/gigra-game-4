@@ -19,7 +19,7 @@ spec:
       containers:
       - args:
         - /var/www/html/run-eh.sh
-        image: xetys/gigra-refact:1.0
+        image: xetys/gigra-refact:1.2
         name: gigra-eh
         volumeMounts:
         - name: config

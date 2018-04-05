@@ -143,9 +143,14 @@ function getHeader()
         $laRes = array();
     }
     endProfile("getHeader");
+    $host = $_ACTCONF['url'];
+    if ($host[strlen($host) -1] == "/") {
+        $host = substr($host, 0, strlen($host) - 1);
+    }
 	return fromTemplate("header.tpl", array(
 		"title" => $_ACTCONF["name"],
 		"gameURL" => $_ACTCONF["url"],
+        "gameHost" => $host,
 		"iNewMSG" => $iNewMSG,
         "sPHPSelf" => $_SERVER['PHP_SELF'],
         "actConf" => $_ACTCONF,
@@ -276,7 +281,9 @@ function buildPage($asTplName,$aaTplVars)
     startProfile("buildPage");
 	echo getHeader();
 	echo fromTemplate($asTplName,$aaTplVars);
-    echo fromTemplate("footer.tpl", array());
+    echo fromTemplate("footer.tpl", array(
+        "host" => $_SERVER['HTTP_HOST']
+    ));
 	endProfile("buildPage");
 	 //session reinigen
     unset($_SESSION["can_forsch"]);

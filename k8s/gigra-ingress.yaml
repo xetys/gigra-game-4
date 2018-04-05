@@ -6,7 +6,7 @@ metadata:
   name: gigra
 spec:
   rules:
-    - host: gigra.stytex.cloud
+    - host: uni1.gigra-game.de
       http:
         paths:
           - backend:

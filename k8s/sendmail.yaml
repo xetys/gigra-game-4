@@ -32,7 +32,7 @@ spec:
       containers:
       - env:
         - name: MAILNAME
-          value: gigra.stytex.cloud
+          value: uni1.gigra-game.de
         image: namshi/smtp
         name: sendmail
         ports:

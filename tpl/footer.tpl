@@ -10,8 +10,8 @@ Gigra Game &copy; 2006 - 2012 | {@GG_VERSION} | <a href="http://forum.gigra-game
 </div>
 <script type='text/javascript' src='js/bauinfo_js.js'></script>
 
-{*<script src="http://stytex.de:8080/socket.io/socket.io.js" type="text/javascript"></script>*}
-<script src="chat/chat2client.js?chace=2" type="text/javascript"></script>
+<script src="http://{$host}:8080/socket.io/socket.io.js" type="text/javascript"></script>
+<script src="chat/chat2client.js?chace=3" type="text/javascript"></script>
 
 <script type="text/javascript" src="{$gameURL}/js/tutorial.js"></script>
 {:showTutorialList()}

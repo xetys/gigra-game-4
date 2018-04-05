@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gigra-chat
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    run: gigra-chat
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: gigra-chat
+  name: gigra-chat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: gigra-chat
+  template:
+    metadata:
+      labels:
+        run: gigra-chat
+    spec:
+      containers:
+      - image: xetys/gigra-chat:1.0
+        name: gigra-chat
+        ports:
+        - containerPort: 8080

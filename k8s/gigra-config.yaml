@@ -2,15 +2,15 @@ apiVersion: v1
 data:
   config.php: "<?php\n\ndefine(\"ROOT_PATH\",\"/var/www/html\");\n\n$_CONFIG = array(\n\t1
     => array(\n\t\t\"name\" => \"ComeBackUni\",\n\t\t\"mysql\" => array(\"mysql\",\"root\",\"root\",\"gigra\"),\n\t\t\"url\"
-    => \"http://gigra.stytex.cloud\",\n\t\t\"forum\" => \"http://forum.gigra-game.de\",\n\t\t\"maxgala\"
+    => \"http://uni1.gigra-game.de/\",\n\t\t\"forum\" => \"http://forum.gigra-game.de\",\n\t\t\"maxgala\"
     => 6,\n\t\t\"maxsys\" => 500,\n\t\t\"noobschutz\" => 2000000,\n\t\t\"noobfaktor\"
     => 5,\n        \"noobspeed\" => 4,\n\t\t\"lang\" => \"de\",\n\t\t\"mailfrom\"
-    => \"info@gigra-game.de\",\n\t\t\"maxuser\" => 1500,\n\t\t\"reg_allowed\" => true,\n\t\t\"reg_pw\"
-    => \"gigrarefact\",\n        \"speed_res\" => 1,\n        \"speed_build\" => 1,\n
-    \       \"speed_fleet\" => 100,\n        \"sensor_cost\" => 15000,\n        \"angriffsperre\"
+    => \"info@gigra-game.de\",\n\t\t\"maxuser\" => 15000,\n\t\t\"reg_allowed\" => true,\n\t\t\"reg_pw\"
+    => \"gigrarefact\",\n        \"speed_res\" => 2,\n        \"speed_build\" => 4,\n
+    \       \"speed_fleet\" => 10,\n        \"sensor_cost\" => 15000,\n        \"angriffsperre\"
     => mktime(18,0,0,5,11,2012),\n        \"offline\" => false,\n\t    \"debris_faktors\"
     => array(0.7,0.5,0.8,0.1),\n        \"defense_to_debris\" => false,\n        \"start_account\"
-    => false,\n        \"const_old\" => false,\n\t)\n);\n"
+    => true,\n        \"const_old\" => false,\n\t)\n);\n"
 kind: ConfigMap
 metadata:
   creationTimestamp: null

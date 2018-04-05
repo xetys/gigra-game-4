@@ -18,7 +18,7 @@ spec:
         io.kompose.service: gigra
     spec:
       containers:
-      - image: xetys/gigra-refact:1.2
+      - image: xetys/gigra-refact:1.3
         name: gigra-srv
         command:
           - /bin/bash
