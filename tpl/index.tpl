@@ -48,7 +48,6 @@
 					<img src="captcha.php" alt="Code">
 				</td>
 			</tr>
-			*}
  			<tr class="login_table_tr">
 				<td class="login_table_td">
 					{:l('in_this_box')}
@@ -57,7 +56,8 @@
 					<input class="index_login_input" type="text" name="code" id="code" autocomplete="off">
 				</td>
 			</tr>
-			
+			*}
+
 			<tr class="login_table_tr">
 				<td class="login_table_td">
 					{:l('round')}
